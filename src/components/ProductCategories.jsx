@@ -43,7 +43,7 @@ const ProductCategories = () => {
 const Card = ({ name, desc, image, count, id }) => {
   console.log(id)
   return (
-    <div className="card card-sm bg-base-100 w-64 shadow-sm">
+    <div className="card card-sm  w-64 shadow-sm">
       <figure>
         <img src={image} alt={name} />
       </figure>
