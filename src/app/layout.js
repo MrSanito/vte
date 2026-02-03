@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "src/components/Footer";
 import { ThemeProvider } from "../context/ThemeContext";
 import WhatsAppButton from "../components/WhatsAppButton";
+import Script from "next/script";
 
 
 const geistSans = Geist({
@@ -33,6 +34,32 @@ export default function RootLayout({ children }) {
           <Footer />
           <WhatsAppButton />
         </ThemeProvider>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JP5XLCYZN7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JP5XLCYZN7');
+          `}
+        </Script>
+
+        {/* Microsoft Clarity */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "vbqdl2iofj");
+          `}
+        </Script>
       </body>
     </html>
   );
