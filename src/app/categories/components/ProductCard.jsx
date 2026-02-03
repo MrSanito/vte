@@ -7,7 +7,10 @@ const ProductCard = ({ product }) => {
 
   return (
     <>
-      <div className="group bg-white dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col h-full">
+      <div 
+        onClick={() => setIsModalOpen(true)}
+        className="group bg-white dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col h-full cursor-pointer"
+      >
         <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
           <img
             src={product.image}
@@ -30,7 +33,6 @@ const ProductCard = ({ product }) => {
              {product.price !== "₹---" ? product.price : "Ask for Price"} 
             </span>
             <button 
-              onClick={() => setIsModalOpen(true)}
               className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium rounded-lg transition-colors shadow-md hover:shadow-lg active:scale-95"
             >
               Inquire Now

@@ -1,0 +1,340 @@
+[
+  {
+    "id": "cnc-milling-service",
+    "name": "Cnc Milling Service",
+    "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/VE/WK/FC/119906037/product-jpeg-250x250.jpg",
+    "description": "Cnc Milling Service services and products.",
+    "products": [
+      {
+        "id": "26118687533",
+        "name": "EDM Job Works",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/VE/WK/FC/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality EDM Job Works."
+      },
+      {
+        "id": "23589100962",
+        "name": "CNC Turning JobWork Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/6/VX/UN/RU/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality CNC Turning JobWork Service."
+      },
+      {
+        "id": "23580295033",
+        "name": "CNC Milling Machining Service, Material - Mild Steel (MS)",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/6/DF/QD/XG/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality CNC Milling Machining Service, Material - Mild Steel (MS)."
+      },
+      {
+        "id": "24150557148",
+        "name": "Machining Job Work",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/JK/GT/IR/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Machining Job Work."
+      },
+      {
+        "id": "26312239855",
+        "name": "Cnc Turning Job Work",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/UV/KC/NM/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Cnc Turning Job Work."
+      },
+      {
+        "id": "23461955888",
+        "name": "Pellet Mill Die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/5/XT/RK/FH/119906037/pellet-mill-die-250x250.jpg",
+        "description": "High-quality Pellet Mill Die."
+      },
+      {
+        "id": "23576223433",
+        "name": "Pellet mill die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/6/HA/CM/XK/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Pellet mill die."
+      },
+      {
+        "id": "2855386166448",
+        "name": "Pellet mill ring die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2024/12/470018488/ZV/EX/XO/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Pellet mill ring die."
+      },
+      {
+        "id": "2855386176333",
+        "name": "Pellet mill flate die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2024/12/470019207/XX/EQ/GA/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Pellet mill flate die."
+      },
+      {
+        "id": "2854712781291",
+        "name": "Pellet mill machine",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2024/8/444965470/GX/OA/II/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Pellet mill machine."
+      },
+      {
+        "id": "23462029688",
+        "name": "62HRC Die Punches",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/5/KL/EP/SP/119906037/round-punch-die-500x500-jpg-250x250.jpg",
+        "description": "High-quality 62HRC Die Punches."
+      },
+      {
+        "id": "26118688691",
+        "name": "Round Punches Die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/VF/AO/UA/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Round Punches Die."
+      },
+      {
+        "id": "24150560673",
+        "name": "Punching Dies",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/XP/MW/ND/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Punching Dies."
+      },
+      {
+        "id": "26118689388",
+        "name": "Punching Tools",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/NT/WI/FD/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Punching Tools."
+      },
+      {
+        "id": "26118689555",
+        "name": "Hollow Punch",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/YZ/AC/UV/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Hollow Punch."
+      },
+      {
+        "id": "23461972112",
+        "name": "Surface Grinding Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/5/ES/CG/LR/119906037/grinding-job-work-250x250.jpg",
+        "description": "High-quality Surface Grinding Service."
+      },
+      {
+        "id": "23461982912",
+        "name": "Cylindrical Grinding Services",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/5/DC/VH/EH/119906037/cylindrical-grinding-job-work-250x250.jpeg",
+        "description": "High-quality Cylindrical Grinding Services."
+      },
+      {
+        "id": "26312343033",
+        "name": "Cnc Center Less Grinding Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2024/8/446602779/RP/II/AL/119906037/cnc-center-less-grinding-service-250x250.png",
+        "description": "High-quality Cnc Center Less Grinding Service."
+      },
+      {
+        "id": "26312243133",
+        "name": "Cylinderical Grinding Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/DP/FS/OD/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Cylinderical Grinding Service."
+      },
+      {
+        "id": "23459458748",
+        "name": "Mild Steel Cutting Die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/RF/VE/BS/119906037/mild-steel-cutting-die-250x250.jpg",
+        "description": "High-quality Mild Steel Cutting Die."
+      },
+      {
+        "id": "23577290930",
+        "name": "Metal Cutting Die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/8/OZ/ND/EY/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Metal Cutting Die."
+      },
+      {
+        "id": "27430645748",
+        "name": "Form die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/11/YL/BG/JX/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Form die."
+      },
+      {
+        "id": "23459448655",
+        "name": "Sheet Metal Cutting Die",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/5/IL/BM/BA/119906037/sheet-metal-cutting-die-250x250.jpg",
+        "description": "High-quality Sheet Metal Cutting Die."
+      },
+      {
+        "id": "26312349033",
+        "name": "Cnc Wire Cutting Job Work Services",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/HI/BM/WA/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Cnc Wire Cutting Job Work Services."
+      },
+      {
+        "id": "26312254230",
+        "name": "Cnc Lathe Machine Job Work",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/BF/JC/TJ/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Cnc Lathe Machine Job Work."
+      },
+      {
+        "id": "23577293288",
+        "name": "CNC Milling Machining Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/8/JX/IR/LY/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality CNC Milling Machining Service."
+      },
+      {
+        "id": "27572767955",
+        "name": "Metal Gear Shafts",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2023/1/UX/ZZ/UR/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Metal Gear Shafts."
+      },
+      {
+        "id": "26118687262",
+        "name": "Motor Shaft",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/HY/IC/XG/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Motor Shaft."
+      },
+      {
+        "id": "27572766455",
+        "name": "Machined Shafts",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/12/AC/WO/WH/119906037/prod-20221230-06072917725667978960994-jpg-250x250.jpg",
+        "description": "High-quality Machined Shafts."
+      },
+      {
+        "id": "27572771591",
+        "name": "Forged Shafts",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2023/1/LE/WE/DZ/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Forged Shafts."
+      },
+      {
+        "id": "2854713225773",
+        "name": "Spline shaft",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2024/8/444974201/FO/TY/AL/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Spline shaft."
+      },
+      {
+        "id": "27110977248",
+        "name": "HSS M2 PUNCH",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/10/EH/FM/AI/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality HSS M2 PUNCH."
+      },
+      {
+        "id": "26118686630",
+        "name": "HSS Punches",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/XK/EN/LW/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality HSS Punches."
+      },
+      {
+        "id": "25677681791",
+        "name": "HSS Punch",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/5/KZ/AR/YP/119906037/hss-punches-500x500-jpg-250x250.jpg",
+        "description": "High-quality HSS Punch."
+      },
+      {
+        "id": "26312335573",
+        "name": "Cnc Machine Milling Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/BI/KY/BI/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Cnc Machine Milling Service."
+      },
+      {
+        "id": "23462003097",
+        "name": "VMC Machining Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/5/HZ/FQ/LQ/119906037/product-jpeg-250x250.jpeg",
+        "description": "High-quality VMC Machining Service."
+      },
+      {
+        "id": "24285097073",
+        "name": "VMC Machining Service, Material - Stainless Steel (SS)",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/12/NM/JZ/YB/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality VMC Machining Service, Material - Stainless Steel (SS)."
+      },
+      {
+        "id": "26118688812",
+        "name": "Die Moulds Job Works",
+        "price": "Ask for Price",
+        "image": "/placeholder.svg",
+        "description": "High-quality Die Moulds Job Works."
+      },
+      {
+        "id": "23459629655",
+        "name": "Internal Grinding Spindles",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/6/JG/CG/TN/119906037/internal-grinding-spindles-250x250.jpg",
+        "description": "High-quality Internal Grinding Spindles."
+      },
+      {
+        "id": "24150560897",
+        "name": "Spindle Repair Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/LG/LM/WV/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Spindle Repair Service."
+      },
+      {
+        "id": "23517627512",
+        "name": "Spindle Repair Ing Services",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2021/6/NW/SM/OW/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Spindle Repair Ing Services."
+      },
+      {
+        "id": "26312323430",
+        "name": "Spindle Maintenance Service",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/JI/RE/GY/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Spindle Maintenance Service."
+      }
+    ]
+  },
+  {
+    "id": "uncategorized",
+    "name": "Uncategorized",
+    "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/QJ/ZY/PU/119906037/product-jpeg-250x250.jpg",
+    "description": "Uncategorized services and products.",
+    "products": [
+      {
+        "id": "26312307688",
+        "name": "Beater Hammer Mill",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/8/QJ/ZY/PU/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Beater Hammer Mill."
+      },
+      {
+        "id": "2854712707230",
+        "name": "Hammer Mill Rotor",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2024/8/444962753/GF/RJ/BQ/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Hammer Mill Rotor."
+      },
+      {
+        "id": "2854712736712",
+        "name": "Hammer Mill Machine",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2024/8/444964448/XM/JE/ZM/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality Hammer Mill Machine."
+      },
+      {
+        "id": "25903224288",
+        "name": "HAMMAR MILL BEATARS",
+        "price": "Ask for Price",
+        "image": "https://5.imimg.com/data5/ANDROID/Default/2022/6/RN/GH/ZZ/119906037/product-jpeg-250x250.jpg",
+        "description": "High-quality HAMMAR MILL BEATARS."
+      }
+    ]
+  }
+]
