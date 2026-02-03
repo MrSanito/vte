@@ -6,30 +6,32 @@ import { Menu, X } from "lucide-react";
 import { Button } from "../../@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="h-16 w-full bg-white shadow-md sticky top-0 z-50">
+    <nav className="h-16 w-full bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Brand */}
-        <Link href="/" className="text-xl font-bold text-primary">
-          Vishal Industries
+        <Link href="/" className="text-xl font-bold text-orange-600 dark:text-orange-500">
+          VTE
         </Link>
+        
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6">
-          <Link href="/" className="text-gray-700 hover:text-primary">
+          <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-500 font-medium">
             Home
           </Link>
 
-          <Link href="/categories" className="text-gray-700 hover:text-primary">
+          <Link href="/categories" className="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-500 font-medium">
             Products
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-primary">
+          <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-500 font-medium">
             Contact
           </Link>
-          <Link href="/about" className="text-gray-700 hover:text-primary">
+          <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-500 font-medium">
             About
           </Link>
         </div>
@@ -65,7 +67,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed top-0 left-0 w-2/3 h-full bg-white shadow-lg z-50 flex flex-col p-6"
+              className="fixed top-0 left-0 w-2/3 h-full bg-white dark:bg-gray-900 shadow-lg z-50 flex flex-col p-6"
             >
               <div className="flex justify-between items-center mb-8">
                 <span className="text-lg font-bold text-primary">Menu</span>
@@ -77,14 +79,14 @@ export default function Navbar() {
                   <X className="h-6 w-6" />
                 </Button>
               </div>
-              <div className="flex flex-col gap-6 text-lg">
+              <div className="flex flex-col gap-6 text-lg text-gray-800 dark:text-gray-200">
                 <Link href="/" onClick={() => setIsOpen(false)}>
                   Home
                 </Link>
                 <Link href="/about" onClick={() => setIsOpen(false)}>
                   About
                 </Link>
-                <Link href="/products" onClick={() => setIsOpen(false)}>
+                <Link href="/categories" onClick={() => setIsOpen(false)}>
                   Products
                 </Link>
                 <Link href="/contact" onClick={() => setIsOpen(false)}>

@@ -1,8 +1,28 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+
+/* Global Font Scaling */
+html {
+  font-size: 14px; /* Base size reduced from default 16px */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 15px; /* Slightly larger on desktops but still compact */
+  }
+}
+
+/* @import "tw-animate-css"; */
 @import "swiper/css";
 @import "swiper/css/navigation";
-@import "swiper/css/pagination";
+@layer base {
+  body {
+    @apply bg-white text-gray-900 transition-colors duration-300;
+  }
+  .dark body {
+    @apply bg-gray-950 text-gray-100;
+  }
+}
+
 
 
 @custom-variant dark (&:is(.dark *));

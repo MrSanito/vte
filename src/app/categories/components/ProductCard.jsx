@@ -1,36 +1,50 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import InquireModal from "src/components/InquireModal";
 
-const ProductCard = (params) => {
-  console.log(params.product.description);
+const ProductCard = ({ product }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="w-full h-full">
-      <div className="card bg-white shadow-sm rounded-lg overflow-hidden h-full flex flex-col w-full">
-        <figure className="relative h-48 sm:h-56 md:h-48 lg:h-56">
+    <>
+      <div className="group bg-white dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col h-full">
+        <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
           <img
-            src="/Hero.jpg"
-            alt={params.product.name}
-            className="w-full h-full object-cover"
+            src={product.image}
+            alt={product.name}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-        </figure>
-        <div className="card-body p-3 sm:p-4 flex flex-col flex-1">
-          <h4 className="card-title text-sm sm:text-base lg:text-lg font-semibold line-clamp-2 mb-2">
-            {params.product.name}
-          </h4>
-          <p className="line-clamp-2 text-xs sm:text-sm text-gray-600 flex-1 mb-3">
-            {params.product.description}
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+        </div>
+
+        <div className="p-5 flex-1 flex flex-col">
+          <h3 className="font-bold text-gray-900 dark:text-white text-lg mb-2 line-clamp-2">
+            {product.name}
+          </h3>
+          <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3 flex-1">
+            High-quality {product.name} designed for industrial precision and durability.
           </p>
-          <div className="card-actions flex justify-between items-center mt-auto">
-            <p className="text-orange-500 font-bold text-sm sm:text-base">
-              {params.product.price}
-            </p>
-            <button className="btn btn-primary btn-sm sm:btn-md text-xs sm:text-sm px-2 sm:px-4">
-              View
+          
+          <div className="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-3">
+            <span className="text-sm font-semibold text-gray-500 dark:text-gray-400">
+             {product.price !== "₹---" ? product.price : "Ask for Price"} 
+            </span>
+            <button 
+              onClick={() => setIsModalOpen(true)}
+              className="px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white text-sm font-medium rounded-lg transition-colors shadow-md hover:shadow-lg active:scale-95"
+            >
+              Inquire Now
             </button>
           </div>
         </div>
       </div>
-    </div>
+
+      <InquireModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        product={product} 
+      />
+    </>
   );
 };
 

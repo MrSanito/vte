@@ -14,8 +14,7 @@ const Footer = () => {
         {/* Left Section */}
         <div>
           <h2 className="text-white font-bold text-lg flex items-center gap-2 mb-4">
-            <span className="text-orange-500 text-2xl">🏭</span> IndusTech
-            Manufacturing
+            <span className="text-orange-500 text-2xl">🏭</span> Vishal Tools Enterprise
           </h2>
           <p className="text-sm leading-relaxed mb-6">
             Leading manufacturer of high-quality industrial machinery and tools.
@@ -122,7 +121,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="flex flex-col md:flex-row justify-between items-center pt-6 text-sm text-gray-400">
         <p>
-          © {new Date().getFullYear()} IndusTech Manufacturing. All rights
+          © {new Date().getFullYear()} Vishal Tools Enterprise. All rights
           reserved.
         </p>
         <div className="flex gap-6 mt-4 md:mt-0">
