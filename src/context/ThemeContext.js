@@ -9,15 +9,14 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    // Check local storage or system preference
+    // Check local storage or default to light
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
       setTheme(storedTheme);
       document.documentElement.classList.add(storedTheme);
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-      document.documentElement.classList.add("dark");
     } else {
+       // Default to light mode as requested
+      setTheme("light");
       document.documentElement.classList.add("light");
     }
   }, []);

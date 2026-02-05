@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <section
         id="HeroSection"
-        className="relative min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 text-center overflow-hidden"
+        className="relative min-h-[100dvh] flex items-center justify-center px-4 sm:px-6 lg:px-8 text-center overflow-hidden"
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
@@ -71,7 +71,7 @@ export default function Home() {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:-translate-y-1">
+            <Link href="/categories/cnc-services" className="group bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 block h-full">
               <div className="w-16 h-16 rounded-xl bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center mb-6 group-hover:bg-orange-500 transition-colors duration-300">
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-orange-600 group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -95,10 +95,10 @@ export default function Home() {
                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500"></div> Conveyor Systems
                 </li>
               </ul>
-            </div>
+            </Link>
 
             {/* Card 2 */}
-            <div className="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:-translate-y-1">
+            <Link href="/categories/shafts-gears" className="group bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 block h-full">
               <div className="w-16 h-16 rounded-xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -112,7 +112,7 @@ export default function Home() {
                 Genuine replacement parts and components to keep your machinery
                 running at peak performance.
               </p>
-               <ul className="space-y-3 text-gray-700">
+               <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                 <li className="flex items-center gap-3">
                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div> OEM Parts
                 </li>
@@ -123,10 +123,10 @@ export default function Home() {
                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div> Hydraulic Components
                 </li>
               </ul>
-            </div>
+            </Link>
 
             {/* Card 3 */}
-            <div className="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:-translate-y-1">
+            <Link href="/contact" className="group bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 hover:-translate-y-1 block h-full">
               <div className="w-16 h-16 rounded-xl bg-green-50 dark:bg-green-900/20 flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors duration-300">
                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600 group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -139,7 +139,7 @@ export default function Home() {
                 Comprehensive maintenance and repair services to ensure optimal
                 performance and longevity.
               </p>
-               <ul className="space-y-3 text-gray-700">
+               <ul className="space-y-3 text-gray-700 dark:text-gray-300">
                 <li className="flex items-center gap-3">
                    <div className="w-1.5 h-1.5 rounded-full bg-green-600"></div> Preventive Maintenance
                 </li>
@@ -150,7 +150,7 @@ export default function Home() {
                    <div className="w-1.5 h-1.5 rounded-full bg-green-600"></div> Technical Support
                 </li>
               </ul>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

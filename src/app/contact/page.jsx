@@ -55,7 +55,8 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Phone Number</h3>
-                  <p className="text-gray-600 mb-1">+91 80460 45834</p>
+                  <p className="text-gray-600 mb-1">+91 87359 72509</p>
+                  <p className="text-gray-600 mb-1">+91 79849 45837</p>
                   <p className="text-sm text-gray-500">Mon-Sat, 9am - 7pm</p>
                 </div>
               </div>
@@ -66,8 +67,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 text-lg">Email Address</h3>
-                  <p className="text-gray-600">info@vishaltoolsenterprise.com</p>
-                  <p className="text-gray-600">sales@vishaltoolsenterprise.com</p>
+                  <p className="text-gray-600">vishaltoolsenterprise2004@gmail.com</p>
                 </div>
               </div>
             </div>

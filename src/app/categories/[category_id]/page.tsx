@@ -1,16 +1,47 @@
-"use client";
 import React from "react";
-import { useParams } from "next/navigation";
-import Link from "next/link";
 import { categories } from "src/app/data/data";
 import ProductCard from "../components/ProductCard";
-import { ChevronRight, ArrowLeft } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
-const CategoryDetailPage = () => {
-  const params = useParams();
-  const categoryId = params?.category_id;
+// Generate MetaData for SEO
+export async function generateMetadata({ params }) {
+  // Await params if necessary (Next.js 15+ compatibility)
+  const { category_id } = await params;
+  const category = categories.find((c) => c.id === category_id);
 
-  const category = categories.find((c) => c.id === categoryId);
+  if (!category) {
+    return {
+      title: "Category Not Found",
+    };
+  }
+
+  const productNames = category.products.map(p => p.name).join(", ");
+
+  return {
+    title: `${category.name} | Vishal Tools Enterprise`,
+    description: `Explore our range of ${category.name} including ${productNames}. High-quality industrial manufacturing from Vadodara.`,
+    keywords: [category.name, ...category.products.map(p => p.name), "Industrial Machinery", "Vadodara", "Manufacturing", "Vishal Tools"],
+    openGraph: {
+      title: `${category.name} | Vishal Tools Enterprise`,
+      description: category.description,
+      images: [
+        {
+          url: category.image && category.image.startsWith('/') ? category.image : '/Hero.jpg',
+          width: 800,
+          height: 600,
+          alt: category.name,
+        },
+      ],
+    },
+  };
+}
+
+export default async function CategoryDetailPage({ params }) {
+  // Await params for server component
+  const { category_id } = await params;
+  const category = categories.find((c) => c.id === category_id);
 
   // Fallback for not found
   if (!category) {
@@ -51,12 +82,9 @@ const CategoryDetailPage = () => {
                         {category.description}
                     </p>
                 </div>
-                 {/* Mobile 'Back' block or extra info could go here if needed, 
-                     but for now keeping it clean */}
             </div>
         </div>
       </div>
-
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col lg:flex-row gap-8">
         
@@ -72,7 +100,7 @@ const CategoryDetailPage = () => {
                   key={cat.id}
                   href={`/categories/${cat.id}`}
                   className={`block px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    cat.id === categoryId
+                    cat.id === category_id
                       ? "bg-orange-50 dark:bg-orange-900/20 text-orange-700 dark:text-orange-400 border-l-4 border-orange-500"
                       : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 hover:text-gray-900 dark:hover:text-gray-200"
                   }`}
@@ -97,7 +125,6 @@ const CategoryDetailPage = () => {
                 <h2 className="text-xl font-bold text-gray-800 dark:text-gray-200">
                     {category.products.length} Products Available
                 </h2>
-                {/* Could add sorting/filtering here later */}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -111,5 +138,3 @@ const CategoryDetailPage = () => {
     </div>
   );
 };
-
-export default CategoryDetailPage;
