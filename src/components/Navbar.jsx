@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { Button } from "../../@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,6 +10,8 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   // Handle scroll effect
   useEffect(() => {
@@ -19,11 +22,14 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Determine if we should show the "solid/scrolled" style
+  const showSolid = scrolled || !isHome;
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 border-b ${
-        scrolled
-          ? "bg-white/80 dark:bg-gray-950/80 backdrop-blur-md shadow-lg border-gray-200/50 dark:border-gray-800/50 h-16"
+        showSolid
+          ? "bg-white/95 dark:bg-gray-950/95 backdrop-blur-md shadow-lg border-gray-200/50 dark:border-gray-800/50 h-16"
           : "bg-transparent border-transparent h-20"
       }`}
     >
@@ -36,7 +42,7 @@ export default function Navbar() {
           <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 text-white font-bold text-xl shadow-lg ring-1 ring-white/20 group-hover:scale-105 transition-transform">
             V
           </div>
-          <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white drop-shadow-md'}`}>
+          <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${showSolid ? 'text-gray-900 dark:text-white' : 'text-white drop-shadow-md'}`}>
             Vishal Tools Enterprise
           </span>
         </Link>
@@ -55,7 +61,7 @@ export default function Navbar() {
               key={item.name}
               href={item.href}
               className={`text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 ${
-                scrolled 
+                showSolid 
                   ? "text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-500" 
                   : "text-white/90 hover:text-white drop-shadow-sm"
               }`}
@@ -66,9 +72,9 @@ export default function Navbar() {
           
           <Link href="/contact">
             <Button 
-                variant={scrolled ? "default" : "secondary"}
+                variant={showSolid ? "default" : "secondary"}
                 className={`rounded-full px-6 font-semibold shadow-md transition-all hover:scale-105 ${
-                    !scrolled && "bg-white text-orange-600 hover:bg-gray-100"
+                    !showSolid && "bg-white text-orange-600 hover:bg-gray-100"
                 }`}
             >
                 Get Quote
@@ -82,7 +88,7 @@ export default function Navbar() {
             variant="ghost"
             size="icon"
             onClick={() => setIsOpen(!isOpen)}
-            className={scrolled ? "text-gray-900 dark:text-white" : "text-white"}
+            className={showSolid ? "text-gray-900 dark:text-white" : "text-white"}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>

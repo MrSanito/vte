@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-20">
       {/* Hero Header */}
       <section className="bg-gray-900 text-white py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">

@@ -1,8 +1,8 @@
 "use client"
 
 import ProductCategories from "src/components/ProductCategories";
-import Footer from "src/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import LeadForm from "src/components/LeadForm";
 
@@ -17,10 +17,12 @@ export default function Home() {
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
+          <Image 
             src="/Hero.jpg" 
             alt="Factory Background" 
-            className="w-full h-full object-cover filter brightness-[0.4]"
+            fill
+            priority
+            className="object-cover filter brightness-[0.4]"
           />
         </div>
 
@@ -227,10 +229,12 @@ export default function Home() {
 
           {/* Right Image */}
           <div className="relative">
-            <img
-              src="Hero.jpg" // replace with your image
+            <Image
+              src="/Hero.jpg" 
               alt="Vishal Tools Enterprise"
-              className="rounded-lg shadow-md w-full"
+              width={800}
+              height={600}
+              className="rounded-lg shadow-md w-full object-cover"
             />
             {/* Badge */}
             <div className="absolute bottom-4 left-4 bg-orange-500 text-white text-sm font-semibold px-4 py-2 rounded">

@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { categories } from "src/app/data/data";
 import Link from "next/link";
+
 const ProductCategories = () => {
   return (
-    <div className="flex justify-center items-center flex-col text-center py-4">
+    <div className="flex justify-center items-center flex-col text-center py-4 pt-24">
       <div>
         <h1 className="font-bold text-3xl my-2">Product Categories</h1>
         <p className="mb-4">
@@ -41,7 +43,6 @@ const ProductCategories = () => {
 };
 
 const Card = ({ name, desc, image, count, id }) => {
-  console.log(id)
   return (
     <Link href={`/categories/${id}`} className="group relative block w-full max-w-sm h-full perspective-1000">
       <div className="relative h-full bg-white dark:bg-gray-900 rounded-2xl overflow-hidden transition-all duration-300 transform group-hover:-translate-y-2 group-hover:shadow-[0_20px_40px_-15px_rgba(249,115,22,0.3)] border border-gray-100 dark:border-gray-800 ring-1 ring-black/5 dark:ring-white/10">
@@ -49,10 +50,12 @@ const Card = ({ name, desc, image, count, id }) => {
         {/* Image Container */}
         <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 opacity-60 group-hover:opacity-40 transition-opacity" />
-           <img 
+           <Image
               src={image} 
-              alt={name} 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt={name}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
             
             {/* Overlay Badge */}

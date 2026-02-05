@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import InquireModal from "src/components/InquireModal";
+import Image from "next/image";
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,10 +13,12 @@ const ProductCard = ({ product }) => {
         className="group bg-white dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 overflow-hidden flex flex-col h-full cursor-pointer"
       >
         <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
-          <img
+          <Image
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
         </div>

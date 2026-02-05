@@ -60,7 +60,7 @@ export default async function CategoryDetailPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-300">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-300 pt-20">
       {/* Category Hero / Header */}
       <div className="bg-white dark:bg-gray-900 shadow-sm border-b border-gray-100 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
