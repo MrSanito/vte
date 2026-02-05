@@ -135,6 +135,58 @@ export default async function CategoryDetailPage({ params }) {
         </main>
 
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://vishaltoolsenterprise.com"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Categories",
+                    "item": "https://vishaltoolsenterprise.com/categories"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": category.name,
+                    "item": `https://vishaltoolsenterprise.com/categories/${category.id}`
+                  }
+                ]
+              },
+              {
+                "@type": "ItemList",
+                "itemListElement": category.products.map((product, index) => ({
+                    "@type": "ListItem",
+                    "position": index + 1,
+                    "item": {
+                        "@type": "Product",
+                        "name": product.name,
+                        "description": `High-quality ${product.name} from Vishal Tools Enterprise.`,
+                        "image": product.image && product.image.startsWith('/') ? `https://vishaltoolsenterprise.com${product.image}` : product.image || "https://vishaltoolsenterprise.com/Hero.jpg",
+                         "offers": {
+                            "@type": "Offer",
+                            "availability": "https://schema.org/InStock",
+                            "priceCurrency": "INR",
+                            "price": "0" // 0 implies 'contact for price' usually, or use AggregateOffer
+                        }
+                    }
+                }))
+              }
+            ]
+          }),
+        }}
+      />
     </div>
   );
 };
