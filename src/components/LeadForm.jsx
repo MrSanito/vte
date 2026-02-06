@@ -24,7 +24,6 @@ const LeadForm = ({ open, onOpenChange }) => {
       ...form, // spread existing form values
       [e.target.id]: e.target.value, // update the field by its id
     });
-    console.log(form); // ⚠️ Note: form won't immediately reflect change here due to async state
   };
 
   const handleSubmit = async (e) => {
@@ -46,7 +45,6 @@ const LeadForm = ({ open, onOpenChange }) => {
     });
 
     const json = await res.json();
-    console.log(json);
   };
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>

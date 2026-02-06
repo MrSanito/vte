@@ -4,7 +4,11 @@ import ProductCategories from "src/components/ProductCategories";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import LeadForm from "src/components/LeadForm";
+import dynamic from "next/dynamic";
+
+const LeadForm = dynamic(() => import("src/components/LeadForm"), {
+  ssr: false,
+});
 
 export default function Home() {
     const [open, setOpen] = useState(false);

@@ -1,7 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import InquireModal from "src/components/InquireModal";
+import React, { useState, memo } from "react";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const InquireModal = dynamic(() => import("src/components/InquireModal"), {
+  ssr: false,
+});
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -53,4 +57,4 @@ const ProductCard = ({ product }) => {
   );
 };
 
-export default ProductCard;
+export default memo(ProductCard);
