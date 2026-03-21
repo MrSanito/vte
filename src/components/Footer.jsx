@@ -9,17 +9,23 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0d1321] text-gray-300 py-12 px-6 md:px-16">
-      <div className="grid md:grid-cols-4 gap-12 border-b border-gray-700 pb-10">
+    <footer className="bg-gray-950 text-gray-400 py-24 px-6 md:px-16 border-t border-white/5 relative overflow-hidden">
+      <div className="absolute top-0 left-1/4 w-64 h-64 bg-orange-600 opacity-[0.02] blur-[100px]"></div>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 border-b border-white/5 pb-10">
         {/* Left Section */}
-        <div>
-          <h2 className="text-white font-bold text-lg flex items-center gap-2 mb-4">
-            <span className="text-orange-500 text-2xl">🏭</span> Vishal Tools Enterprise
-          </h2>
-          <p className="text-sm leading-relaxed mb-6">
+        <div className="md:col-span-1">
+          <Link href="/" className="flex items-center gap-3 mb-8 group">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 text-white font-bold text-xl shadow-lg ring-1 ring-white/20 group-hover:scale-105 transition-transform">
+              V
+            </div>
+            <span className="text-xl font-bold tracking-tight text-white">
+              Vishal Tools
+            </span>
+          </Link>
+          <p className="text-base leading-relaxed mb-8 font-light">
             Leading manufacturer of high-quality industrial machinery and tools.
-            Serving industries worldwide with innovative solutions for over 25
-            years.
+            Serving global industries with precision-engineered solutions for over 25
+            years from Vadodara.
           </p>
 
           {/* Social Icons */}

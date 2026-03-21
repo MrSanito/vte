@@ -18,16 +18,19 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const showSolid = scrolled || !isHome;
-
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 border-b bg-white/80 dark:bg-gray-950/80 backdrop-blur-md shadow-lg border-gray-200/50 dark:border-gray-800/50 ${
-          scrolled ? "h-16" : "h-20"
+        className={`fixed z-50 transition-all duration-500 ${
+          scrolled 
+            ? "top-4 left-4 right-4 h-16 rounded-2xl bg-white/70 dark:bg-gray-950/70 border border-white/20 dark:border-white/5 shadow-2xl backdrop-blur-xl" 
+            : "top-0 left-0 right-0 h-20 bg-white/95 dark:bg-gray-950/95 backdrop-blur-md border-b border-gray-200/50 dark:border-white/5 shadow-sm"
         }`}
       >
-        <div className="max-w-7xl mx-auto h-full flex items-center justify-between px-6 lg:px-8">
+
+
+        <div className={`max-w-7xl mx-auto h-full flex items-center justify-between px-6 lg:px-8 transition-all duration-500 ${scrolled ? "px-4" : "px-6"}`}>
+
           {/* Brand */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 text-white font-bold text-xl shadow-lg ring-1 ring-white/20 group-hover:scale-105 transition-transform">

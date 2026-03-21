@@ -136,11 +136,34 @@ html {
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .grid-pattern {
+    background-image: 
+      linear-gradient(to right, oklch(1 0 0 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(1 0 0 / 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .dark .grid-pattern {
+    background-image: 
+      linear-gradient(to right, oklch(1 0 0 / 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(1 0 0 / 0.03) 1px, transparent 1px);
+  }
+  
+  .glow-orange {
+    box-shadow: 0 0 20px 2px oklch(0.646 0.222 41.116 / 0.15);
+  }
+  
+  .glass-card {
+    @apply bg-white/70 dark:bg-gray-900/40 backdrop-blur-md border border-white/20 dark:border-white/5;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground selection:bg-orange-500/30;
   }
 }
+
