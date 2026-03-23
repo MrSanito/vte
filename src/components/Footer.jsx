@@ -62,19 +62,19 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Products</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="#">Hammer Mills</Link>
+              <Link href="/categories/pellet-hammer">Pellet & Hammer Mills</Link>
             </li>
             <li>
-              <Link href="#">CNC Machines</Link>
+              <Link href="/categories/cnc-services">CNC Machining</Link>
             </li>
             <li>
-              <Link href="#">Conveyor Systems</Link>
+              <Link href="/categories/shafts-gears">Industrial Shafts</Link>
             </li>
             <li>
-              <Link href="#">Cutting Tools</Link>
+              <Link href="/categories/dies-punches">Dies & Punches</Link>
             </li>
             <li>
-              <Link href="#">Hydraulic Equipment</Link>
+              <Link href="/categories/hydraulics">Hydraulic Equipment</Link>
             </li>
           </ul>
         </div>
@@ -84,19 +84,19 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="#">Custom Manufacturing</Link>
+              <Link href="/#Services_Section">Custom Manufacturing</Link>
             </li>
             <li>
-              <Link href="#">Maintenance Services</Link>
+              <Link href="/#Services_Section">Maintenance Services</Link>
             </li>
             <li>
-              <Link href="#">Technical Support</Link>
+              <Link href="/#Services_Section">Technical Support</Link>
             </li>
             <li>
-              <Link href="#">Installation</Link>
+              <Link href="/#Services_Section">Industrial Installation</Link>
             </li>
             <li>
-              <Link href="#">Training</Link>
+              <Link href="/#Services_Section">Operator Training</Link>
             </li>
           </ul>
         </div>
@@ -106,19 +106,19 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="#">About Us</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li>
-              <Link href="#">Careers</Link>
+              <Link href="/contact">Careers</Link>
             </li>
             <li>
-              <Link href="#">News</Link>
+              <Link href="/">Latest News</Link>
             </li>
             <li>
-              <Link href="#">Quality</Link>
+              <Link href="/about">Quality Policy</Link>
             </li>
             <li>
-              <Link href="#">Contact</Link>
+              <Link href="/contact">Contact Support</Link>
             </li>
           </ul>
         </div>
@@ -131,9 +131,9 @@ const Footer = () => {
           reserved.
         </p>
         <div className="flex gap-6 mt-4 md:mt-0">
-          <Link href="#">Privacy Policy</Link>
-          <Link href="#">Terms of Service</Link>
-          <Link href="#">Cookie Policy</Link>
+          <Link href="/about">Privacy Policy</Link>
+          <Link href="/about">Terms of Service</Link>
+          <Link href="/about">Cookie Policy</Link>
         </div>
       </div>
     </footer>

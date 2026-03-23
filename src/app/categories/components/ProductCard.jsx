@@ -16,9 +16,9 @@ const ProductCard = ({ product }) => {
       <div 
         className="group glass-card rounded-3xl shadow-lg hover:shadow-orange-500/10 transition-all duration-500 border border-gray-200/50 dark:border-white/5 overflow-hidden flex flex-col h-full hover:-translate-y-2"
       >
-        <div 
-          onClick={() => setIsModalOpen(true)}
-          className="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 cursor-pointer"
+        <Link 
+          href={`/products/${product.id}`}
+          className="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 cursor-pointer block"
         >
           <Image
             src={product.image}
@@ -28,7 +28,7 @@ const ProductCard = ({ product }) => {
             className="object-cover transition-transform duration-1000 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        </div>
+        </Link>
 
         <div className="p-8 flex-1 flex flex-col">
           <Link href={`/products/${product.id}`}>
@@ -37,7 +37,7 @@ const ProductCard = ({ product }) => {
             </h3>
           </Link>
           <p className="text-gray-600 dark:text-gray-400 text-base mb-4 line-clamp-2 flex-1 font-light leading-relaxed">
-            Uncompromising industrial {product.name.toLowerCase()} engineered for maximum precision, efficiency, and heavy-duty performance.
+            {product.description || `Uncompromising industrial ${product.name.toLowerCase()} engineered for maximum precision, efficiency, and heavy-duty performance.`}
           </p>
           <Link 
             href={`/products/${product.id}`}
