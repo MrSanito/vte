@@ -43,7 +43,7 @@ export const metadata = {
     canonical: '/',
   },
   verification: {
-    google: 'google-site-verification-code', // Placeholder
+    google: 'WDS9-ZrL6NKERc8MnhKiSwqeE-RbxkVZEYoVlyxLk_U',
     other: {
       me: ['vishaltoolsenterprise2004@gmail.com'],
     },
