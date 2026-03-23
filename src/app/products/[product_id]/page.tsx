@@ -4,7 +4,7 @@ import { ChevronRight, Phone, Mail, CheckCircle2, Factory, ShieldCheck, Zap } fr
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import ShareButton from "src/components/ShareButton";
+import ProductInquiryActions from "src/components/ProductInquiryActions";
 
 export async function generateMetadata({ params }) {
   const { product_id } = await params;
@@ -109,7 +109,7 @@ export default async function ProductDetailPage({ params }) {
               <span className="inline-block px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 text-xs font-bold rounded-full uppercase tracking-widest mb-4">
                 {category.name}
               </span>
-              <h1 className="text-3xl md:text-5xl font-black text-gray-900 dark:text-white mb-6 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
                 {product.name}
               </h1>
               <div className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">
@@ -125,25 +125,6 @@ export default async function ProductDetailPage({ params }) {
               </p>
             </div>
 
-            {/* Price section - CTA Focus */}
-            <div className="mb-12 bg-gray-50 dark:bg-gray-900 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 flex flex-wrap items-center justify-between gap-8">
-              <div>
-                <span className="block text-xs uppercase tracking-widest text-gray-400 dark:text-gray-500 font-bold mb-2">Estimated Price</span>
-                <span className="text-4xl font-black text-gray-900 dark:text-white">
-                  {product.price !== "₹---" ? product.price : "Contact for Pricing"}
-                </span>
-                <p className="text-xs text-orange-600 mt-2 font-medium">* Prices depend on customization and quantity</p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 flex-1 sm:flex-none">
-                <Link 
-                  href="/contact"
-                  className="flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-10 py-5 rounded-2xl font-black text-xl transition-all shadow-xl shadow-orange-600/20 active:scale-95"
-                >
-                  Inquire Now
-                </Link>
-                <ShareButton productName={product.name} />
-              </div>
-            </div>
 
             {/* Product Details - Detailed Description */}
             {product.detailedDescription && (
@@ -152,8 +133,13 @@ export default async function ProductDetailPage({ params }) {
                   <div className="w-2 h-8 bg-orange-600 rounded-full" />
                   Product Overview
                 </h2>
-                <div className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                <div className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                   {product.detailedDescription}
+                </div>
+                <div className="p-4 bg-orange-50 dark:bg-orange-900/10 border-l-4 border-orange-500 rounded-r-2xl">
+                  <p className="text-sm font-bold text-orange-800 dark:text-orange-300">
+                    Customization Available: We can manufacture custom sizes and materials as per your specific industrial requirements.
+                  </p>
                 </div>
               </section>
             )}
@@ -173,7 +159,7 @@ export default async function ProductDetailPage({ params }) {
                           <th className="px-6 py-5 text-sm font-bold text-gray-500 dark:text-gray-400 border-b border-gray-100 dark:border-gray-800 w-1/3">
                             {key}
                           </th>
-                          <td className="px-6 py-5 text-sm font-black text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">
+                          <td className="px-6 py-5 text-sm font-bold text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">
                             {value as string}
                           </td>
                         </tr>
@@ -221,13 +207,16 @@ export default async function ProductDetailPage({ params }) {
                 </section>
               )}
             </div>
+            
+            {/* Price & Inquiry Section relocated here */}
+            <ProductInquiryActions product={product} />
           </div>
         </div>
 
         {/* Related Products Section */}
         <section className="mt-20 pt-20 border-t border-gray-100 dark:border-gray-800">
           <div className="flex items-center justify-between mb-12">
-            <h2 className="text-3xl font-black text-gray-900 dark:text-white">Related in {category.name}</h2>
+            <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Related in {category.name}</h2>
             <Link href={`/categories/${category.id}`} className="text-orange-600 font-bold hover:underline">
               View All Products &rarr;
             </Link>

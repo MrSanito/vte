@@ -141,7 +141,7 @@ export default function InquireModal({ product, isOpen, onClose }) {
                       {isSubmitting ? (
                         <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" />
                       ) : (
-                        "Send Inquiry"
+                        "Send on WhatsApp"
                       )}
                     </button>
                   </form>

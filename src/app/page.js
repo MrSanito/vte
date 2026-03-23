@@ -258,11 +258,11 @@ export default function Home() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-10 mb-12">
               <div className="p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-white/5 shadow-sm">
-                <h3 className="text-3xl md:text-4xl font-black text-orange-600 dark:text-orange-500 mb-1">500k+</h3>
+                <h3 className="text-4xl md:text-5xl font-extrabold text-orange-600 dark:text-orange-500 mb-1">500k+</h3>
                 <p className="text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs font-bold">Units Built</p>
               </div>
               <div className="p-6 rounded-2xl bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-white/5 shadow-sm">
-                <h3 className="text-3xl md:text-4xl font-black text-orange-600 dark:text-orange-500 mb-1">50+</h3>
+                <h3 className="text-4xl md:text-5xl font-extrabold text-orange-600 dark:text-orange-500 mb-1">50+</h3>
                 <p className="text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs font-bold">Markets Served</p>
               </div>
             </div>

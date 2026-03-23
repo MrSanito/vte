@@ -38,7 +38,7 @@ const LeadForm = ({ open, onOpenChange }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        to: "916353778872", // Your verified WhatsApp number
+        to: "918735972509", // Updated primary WhatsApp number
         ...payload,
      
       }),
@@ -48,54 +48,50 @@ const LeadForm = ({ open, onOpenChange }) => {
   };
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-l max-h-screen p-6">
+      <DialogContent className="sm:max-w-md p-6 bg-white dark:bg-gray-900 border-none shadow-2xl">
         <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you&apos;re done.
+          <DialogTitle className="text-2xl font-black text-gray-900 dark:text-white">Quick Inquiry</DialogTitle>
+          <DialogDescription className="text-gray-500 dark:text-gray-400">
+            Send us your requirements and we'll get back to you on WhatsApp instantly.
           </DialogDescription>
         </DialogHeader>
 
-        <form className="grid gap-4 mt-6 h-full" onSubmit={handleSubmit}>
-          <div className="grid gap-3">
-            <Label htmlFor="name">Name</Label>
+        <form className="grid gap-6 mt-6" onSubmit={handleSubmit}>
+          <div className="grid gap-2">
+            <Label htmlFor="name" className="text-sm font-bold uppercase tracking-wider text-gray-400">Full Name</Label>
             <Input
               id="name"
-              name="name"
-              defaultValue="Name"
-              onChange={(e) => {
-                handleChange(e);
-              }}
+              placeholder="Your Name"
+              className="bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 h-12"
+              onChange={handleChange}
             />
           </div>
-          <div className="grid gap-3">
-            <Label htmlFor="number">Number</Label>
+          <div className="grid gap-2">
+            <Label htmlFor="number" className="text-sm font-bold uppercase tracking-wider text-gray-400">WhatsApp Number</Label>
             <Input
               id="number"
-              name="Number"
-              placeholder="Enter Your Mobile Number"
-              onChange={(e) => {
-                handleChange(e);
-              }}
+              placeholder="+91 87359 72509"
+              className="bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 h-12"
+              onChange={handleChange}
             />
           </div>
-          <div className="grid gap-3">
-            <Label htmlFor="email">Email</Label>
+          <div className="grid gap-2">
+            <Label htmlFor="email" className="text-sm font-bold uppercase tracking-wider text-gray-400">Email Address</Label>
             <Input
               id="email"
-              name="Email"
-              placeholder="Enter Your Email here"
-              onChange={(e) => {
-                handleChange(e);
-              }}
+              placeholder="john@example.com"
+              className="bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 h-12"
+              onChange={handleChange}
             />
           </div>
 
-          <DialogFooter className="mt-auto">
+          <DialogFooter className="mt-4 gap-3">
             <DialogClose asChild>
-              <Button variant="outline">Cancel</Button>
+              <Button variant="ghost" className="font-bold">Cancel</Button>
             </DialogClose>
-            <Button type="submit">Save changes</Button>
+            <Button type="submit" className="bg-green-600 hover:bg-green-700 text-white font-black px-8 h-12 rounded-xl transition-all shadow-lg shadow-green-600/20 flex-1">
+              Submit on WhatsApp
+            </Button>
           </DialogFooter>
         </form>
       </DialogContent>

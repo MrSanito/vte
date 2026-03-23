@@ -49,12 +49,17 @@ const ProductCard = ({ product }) => {
           <div className="mt-auto pt-6 border-t border-gray-100 dark:border-white/5 flex items-center justify-between gap-4">
             <div className="flex flex-col">
               <span className="text-[10px] uppercase tracking-widest text-gray-400 dark:text-gray-500 font-bold mb-1">Price Point</span>
-              <span className="text-lg font-black text-gray-950 dark:text-white">
+              <span className="text-lg font-extrabold text-gray-950 dark:text-white">
                {product.price !== "₹---" ? product.price : "Custom Quote"} 
               </span>
             </div>
             <button 
-              className="px-6 py-3 bg-gray-950 dark:bg-white text-white dark:text-gray-950 group-hover:bg-orange-600 group-hover:text-white text-sm font-bold rounded-full transition-all duration-300 shadow-md hover:shadow-orange-500/20 active:scale-95"
+              onClick={() => {
+                const whatsappUrl = `https://wa.me/918735972509?text=${encodeURIComponent(`Hi, I'm interested in ${product.name}. Please provide more details.`)}`;
+                window.open(whatsappUrl, "_blank");
+                setIsModalOpen(true);
+              }}
+              className="px-6 py-3 bg-gray-950 dark:bg-white text-white dark:text-gray-950 group-hover:bg-green-600 group-hover:text-white text-sm font-bold rounded-full transition-all duration-300 shadow-md hover:shadow-green-500/20 active:scale-95 flex items-center gap-2"
             >
               Inquire
             </button>
