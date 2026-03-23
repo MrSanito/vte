@@ -148,19 +148,19 @@ export default async function CategoryDetailPage({ params }) {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://vishaltoolsenterprise.com"
+                    "item": "https://www.vishaltoolsententerprise.in"
                   },
                   {
                     "@type": "ListItem",
                     "position": 2,
                     "name": "Categories",
-                    "item": "https://vishaltoolsenterprise.com/categories"
+                    "item": "https://www.vishaltoolsententerprise.in/categories"
                   },
                   {
                     "@type": "ListItem",
                     "position": 3,
                     "name": category.name,
-                    "item": `https://vishaltoolsenterprise.com/categories/${category.id}`
+                    "item": `https://www.vishaltoolsententerprise.in/categories/${category.id}`
                   }
                 ]
               },
@@ -173,7 +173,7 @@ export default async function CategoryDetailPage({ params }) {
                         "@type": "Product",
                         "name": product.name,
                         "description": `High-quality ${product.name} from Vishal Tools Enterprise.`,
-                        "image": product.image && product.image.startsWith('/') ? `https://vishaltoolsenterprise.com${product.image}` : product.image || "https://vishaltoolsenterprise.com/Hero.jpg",
+                        "image": product.image && product.image.startsWith('/') ? `https://www.vishaltoolsententerprise.in${product.image}` : product.image || "https://www.vishaltoolsententerprise.in/Hero.jpg",
                          "offers": {
                             "@type": "Offer",
                             "availability": "https://schema.org/InStock",

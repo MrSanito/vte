@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, memo } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 
 const InquireModal = dynamic(() => import("src/components/InquireModal"), {
@@ -13,10 +14,12 @@ const ProductCard = ({ product }) => {
   return (
     <>
       <div 
-        onClick={() => setIsModalOpen(true)}
-        className="group glass-card rounded-3xl shadow-lg hover:shadow-orange-500/10 transition-all duration-500 border border-gray-200/50 dark:border-white/5 overflow-hidden flex flex-col h-full cursor-pointer hover:-translate-y-2"
+        className="group glass-card rounded-3xl shadow-lg hover:shadow-orange-500/10 transition-all duration-500 border border-gray-200/50 dark:border-white/5 overflow-hidden flex flex-col h-full hover:-translate-y-2"
       >
-        <div className="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800">
+        <div 
+          onClick={() => setIsModalOpen(true)}
+          className="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-800 cursor-pointer"
+        >
           <Image
             src={product.image}
             alt={product.name}
@@ -28,12 +31,20 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className="p-8 flex-1 flex flex-col">
-          <h3 className="font-bold text-gray-900 dark:text-white text-xl mb-3 tracking-tight group-hover:text-orange-600 dark:group-hover:text-orange-500 transition-colors">
-            {product.name}
-          </h3>
-          <p className="text-gray-600 dark:text-gray-400 text-base mb-6 line-clamp-2 flex-1 font-light leading-relaxed">
+          <Link href={`/products/${product.id}`}>
+            <h3 className="font-bold text-gray-900 dark:text-white text-xl mb-3 tracking-tight group-hover:text-orange-600 dark:group-hover:text-orange-500 transition-colors">
+              {product.name}
+            </h3>
+          </Link>
+          <p className="text-gray-600 dark:text-gray-400 text-base mb-4 line-clamp-2 flex-1 font-light leading-relaxed">
             Uncompromising industrial {product.name.toLowerCase()} engineered for maximum precision, efficiency, and heavy-duty performance.
           </p>
+          <Link 
+            href={`/products/${product.id}`}
+            className="text-orange-600 dark:text-orange-500 text-sm font-bold hover:underline mb-6 inline-block"
+          >
+            View Details &rarr;
+          </Link>
           
           <div className="mt-auto pt-6 border-t border-gray-100 dark:border-white/5 flex items-center justify-between gap-4">
             <div className="flex flex-col">

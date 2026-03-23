@@ -20,14 +20,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://vishaltoolsenterprise.com'),
+  metadataBase: new URL('https://www.vishaltoolsententerprise.in'),
   title: {
     default: "Vishal Tools Enterprise | Precision Engineering & Industrial Machinery",
     template: "%s | Vishal Tools Enterprise"
   },
   description: "Vishal Tools Enterprise: Leading manufacturer of industrial machinery, CNC components, hammers mills, and custom engineering solutions in Vadodara, Gujarat. Global supplier of precision tools for over 25 years.",
   keywords: ["Industrial Machinery", "CNC Machining", "Precision Engineering", "Vadodara Manufacturer", "Hammer Mills", "Conveyor Systems", "Industrial Spare Parts", "Gujarat Engineering", "Steel Components", "Custom Fabrication"],
-  authors: [{ name: "Vishal Tools Enterprise", url: 'https://vishaltoolsenterprise.com' }],
+  authors: [{ name: "Vishal Tools Enterprise", url: 'https://www.vishaltoolsententerprise.in' }],
   creator: "Vishal Tools Enterprise",
   publisher: "Vishal Tools Enterprise",
   applicationName: "Vishal Tools Enterprise",
@@ -51,7 +51,7 @@ export const metadata = {
   openGraph: {
     title: "Vishal Tools Enterprise | World-Class Industrial Solutions",
     description: "Premium manufacturer of industrial machinery and custom engineering solutions serving global markets from Vadodara.",
-    url: 'https://vishaltoolsenterprise.com',
+    url: 'https://www.vishaltoolsententerprise.in',
     siteName: 'Vishal Tools Enterprise',
     images: [
       {
@@ -125,10 +125,10 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "Vishal Tools Enterprise",
-              "image": "https://vishaltoolsenterprise.com/Hero.jpg",
+              "image": "https://www.vishaltoolsententerprise.in/Hero.jpg",
               "telephone": "+918735972509",
               "email": "vishaltoolsenterprise2004@gmail.com",
-              "url": "https://vishaltoolsenterprise.com",
+              "url": "https://www.vishaltoolsententerprise.in",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Plot No. 101, Parvati Nagar, No. 2, Makarpura, B/h Makarpura S. T. Depot, Near Nilkanth Residency",

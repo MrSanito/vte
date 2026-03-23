@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://vishaltoolsenterprise.com/sitemap.xml',
+    sitemap: 'https://www.vishaltoolsententerprise.in/sitemap.xml',
   }
 }
