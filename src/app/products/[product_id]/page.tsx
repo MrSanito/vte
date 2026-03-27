@@ -114,7 +114,7 @@ export default async function ProductDetailPage({ params }) {
               </h1>
               <div className="flex items-center gap-6 text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">
                 <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> 
                   Available for Quote
                 </div>
                 <div className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-gray-700" />
