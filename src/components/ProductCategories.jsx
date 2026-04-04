@@ -8,8 +8,8 @@ const ProductCategories = () => {
   return (
     <div className="flex justify-center items-center flex-col text-center py-4 pt-24">
       <div>
-        <h1 className="font-bold text-3xl my-2">Product Categories</h1>
-        <p className="mb-4">
+        <h2 className="font-bold text-3xl my-2 text-gray-900 dark:text-white">Product Categories</h2>
+        <p className="mb-4 text-gray-600 dark:text-gray-400">
           Explore our comprehensive range of industrial equipment and machinery
         </p>
       </div>
@@ -66,9 +66,9 @@ const Card = ({ name, desc, image, count, id }) => {
 
         {/* Content */}
         <div className="p-6">
-          <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 transition-colors line-clamp-1">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 transition-colors line-clamp-1">
             {name}
-          </h4>
+          </h3>
           <p className="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-6">
             {desc}
           </p>

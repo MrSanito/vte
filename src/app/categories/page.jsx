@@ -49,9 +49,9 @@ const CategoriesPage = () => {
 
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-500 transition-colors">
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-500 transition-colors">
                   {cat.name}
-                </h3>
+                </h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3 flex-1">
                   {cat.description}
                 </p>

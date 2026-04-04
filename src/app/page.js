@@ -203,9 +203,9 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h3 className="text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-6">
+              <span className="inline-block text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-6">
                   Custom Engineering
-              </h3>
+              </span>
               <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white leading-tight tracking-tight">
                   Tailored Solutions for <br className="hidden md:block" /> Complex Industrial Needs
               </h2>
@@ -244,15 +244,17 @@ export default function Home() {
               25 Years of Engineering Excellence
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-6 text-lg leading-relaxed font-light">
-              Founded in 1998, Vishal Tools Enterprise has been at the forefront
-              of industrial innovation. What started as a small precision machine shop 
-              has evolved into a global leader in high-performance machinery.
+              Founded in 1998 and headquartered in the industrial hub of Vadodara, Gujarat, <strong>Vishal Tools Enterprise</strong> has been at the forefront
+              of industrial innovation for over two decades. What started as a small precision machine shop 
+              has evolved into a global leader in high-performance <strong>industrial machinery</strong> and specialized <strong>precision engineering</strong> components. 
+              Our journey is built on a foundation of technical excellence and a deep understanding of the manufacturing challenges faced by modern industry.
             </p>
             <p className="text-gray-600 dark:text-gray-400 mb-10 text-lg leading-relaxed font-light">
-              Our commitment to quality and customer satisfaction
-              has made us a trusted partner for businesses ranging from SMEs
-              to Fortune 500 companies. We blend traditional craftsmanship with 
-              autonomous technology.
+              Our unwavering commitment to quality and absolute customer satisfaction
+              has made us a trusted partner for businesses ranging from emerging SMEs
+              to global industrial conglomerates. We blend traditional craftsmanship with 
+              the latest autonomous technology to produce <strong>precision tools</strong> that set new standards in the market. 
+              Our <strong>custom engineering</strong> solutions ensure that every client receives high-durability <strong>machinery components</strong> tailored to their exact specifications.
             </p>
 
             {/* Stats */}

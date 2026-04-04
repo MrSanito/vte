@@ -22,10 +22,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   metadataBase: new URL('https://www.vishaltoolsententerprise.in'),
   title: {
-    default: "Vishal Tools Enterprise | Precision Engineering & Industrial Machinery",
+    default: "Vishal Tools | Precision Engineering & Industrial Machinery",
     template: "%s | Vishal Tools Enterprise"
   },
-  description: "Vishal Tools Enterprise: Leading manufacturer of industrial machinery, CNC components, hammers mills, and custom engineering solutions in Vadodara, Gujarat. Global supplier of precision tools for over 25 years.",
+  description: "Vishal Tools Enterprise: Expert manufacturer of industrial machinery, CNC parts, and custom engineering in Vadodara. Precision tools supplier for 25+ years.",
   keywords: ["Industrial Machinery", "CNC Machining", "Precision Engineering", "Vadodara Manufacturer", "Hammer Mills", "Conveyor Systems", "Industrial Spare Parts", "Gujarat Engineering", "Steel Components", "Custom Fabrication"],
   authors: [{ name: "Vishal Tools Enterprise", url: 'https://www.vishaltoolsententerprise.in' }],
   creator: "Vishal Tools Enterprise",

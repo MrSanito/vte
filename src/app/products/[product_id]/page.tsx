@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${product.name} | Vishal Tools Enterprise`,
+    title: `${product.name} | Vishal Tools`,
     description: product.description || `High-quality ${product.name} from Vishal Tools Enterprise. ${category.description}`,
     openGraph: {
       title: `${product.name} | Vishal Tools Enterprise`,
@@ -208,7 +208,37 @@ export default async function ProductDetailPage({ params }) {
               )}
             </div>
             
-            {/* Price & Inquiry Section relocated here */}
+            {/* Vishal Tools Engineering Excellence - SEO Content Section Block */}
+            <section className="mt-20 pt-16 border-t border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col md:flex-row gap-12 items-start">
+                <div className="md:w-1/3">
+                  <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
+                    Precision Engineering & <span className="text-orange-600">Industrial Machinery</span> Expertise
+                  </h2>
+                  <div className="w-20 h-1.5 bg-orange-600 rounded-full mb-8" />
+                  <p className="text-gray-500 dark:text-gray-400 font-medium">
+                    Vishal Tools Enterprise has been at the forefront of the manufacturing industry for over two decades, delivering world-class engineering solutions from Vadodara, Gujarat.
+                  </p>
+                </div>
+                
+                <div className="md:w-2/3 space-y-6">
+                  <div className="bg-gray-50 dark:bg-gray-900 p-8 rounded-[2.5rem] border border-gray-100 dark:border-gray-800">
+                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                      At <strong>Vishal Tools Enterprise</strong>, we understand that modern <strong>Industrial Machinery</strong> requires the highest level of <strong>Precision Engineering</strong>. Our manufacturing facility in Vadodara is equipped with advanced technology to produce components that surpass industry benchmarks for accuracy and durability. Whether it is custom <strong>CNC Machining</strong> or specialized industrial spare parts, we ensure every product reflects our commitment to <strong>Manufacturing Excellence</strong>.
+                    </p>
+                    
+                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                      Our extensive range of products, including high-performance pellet mill dies, hammer mill beaters, and precision-ground cylindrical shafts, are designed to withstand the most demanding operational environments. We specialize in providing <strong>Custom Engineering Solutions</strong> tailored to the unique requirements of the automotive, aerospace, and energy sectors. By focusing on material integrity and rigorous <strong>Quality Assurance</strong>, we help our clients maintain peak operational efficiency in their production lines.
+                    </p>
+
+                    <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                      As a trusted <strong>Global Supplier</strong>, Vishal Tools Enterprise serves a diverse international clientele, from local businesses in <strong>Gujarat</strong> to industrial conglomerates across continents. Our engineering expertise extends to complex components like <strong>VMC Machining</strong> and precision dies, where micron-level accuracy is non-negotiable. We remain dedicated to innovation and technical leadership, ensuring that our <strong>Precision Tools</strong> continue to drive the next generation of industrial growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
             <ProductInquiryActions product={product} />
           </div>
         </div>
