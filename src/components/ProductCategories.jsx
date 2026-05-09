@@ -18,7 +18,7 @@ const ProductCategories = () => {
           <div
             key={cat.id}
             className="w-full flex mb-3 justify-center items-center sm:w-1/2 md:w-1/3 md:mx-3 lg:w-1/5 "
-          >
+          >           
             <Card
               name={cat.name}
               desc={cat.description}
