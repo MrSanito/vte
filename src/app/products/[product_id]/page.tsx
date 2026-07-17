@@ -6,6 +6,14 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import ProductInquiryActions from "src/components/ProductInquiryActions";
 
+export async function generateStaticParams() {
+  return categories.flatMap((category) =>
+    category.products.map((product) => ({
+      product_id: product.id,
+    }))
+  );
+}
+
 export async function generateMetadata({ params }) {
   const { product_id } = await params;
   
@@ -28,6 +36,9 @@ export async function generateMetadata({ params }) {
   return {
     title: `${product.name} | Vishal Tools`,
     description: product.description || `High-quality ${product.name} from Vishal Tools Enterprise. ${category.description}`,
+    alternates: {
+      canonical: `/products/${product.id}`,
+    },
     openGraph: {
       title: `${product.name} | Vishal Tools Enterprise`,
       description: product.description || `High-quality ${product.name} from Vishal Tools Enterprise.`,
@@ -276,21 +287,54 @@ export default async function ProductDetailPage({ params }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Product",
-            "name": product.name,
-            "image": product.image && product.image.startsWith('/') ? `https://www.vishaltoolsententerprise.in${product.image}` : product.image || "https://www.vishaltoolsententerprise.in/Hero.jpg",
-            "description": product.description || `High-quality ${product.name} from Vishal Tools Enterprise.`,
-            "brand": {
-              "@type": "Brand",
-              "name": "Vishal Tools Enterprise"
-            },
-            "offers": {
-              "@type": "Offer",
-              "url": `https://www.vishaltoolsententerprise.in/products/${product.id}`,
-              "priceCurrency": "INR",
-              "price": "0",
-              "availability": "https://schema.org/InStock"
-            }
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.vishaltoolsententerprise.in"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://www.vishaltoolsententerprise.in/categories"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": category.name,
+                    "item": `https://www.vishaltoolsententerprise.in/categories/${category.id}`
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": product.name,
+                    "item": `https://www.vishaltoolsententerprise.in/products/${product.id}`
+                  }
+                ]
+              },
+              {
+                "@type": "Product",
+                "name": product.name,
+                "image": product.image && product.image.startsWith('/') ? `https://www.vishaltoolsententerprise.in${product.image}` : product.image || "https://www.vishaltoolsententerprise.in/Hero.jpg",
+                "description": product.description || `High-quality ${product.name} from Vishal Tools Enterprise.`,
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Vishal Tools Enterprise"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "url": `https://www.vishaltoolsententerprise.in/products/${product.id}`,
+                  "priceCurrency": "INR",
+                  "price": "0",
+                  "availability": "https://schema.org/InStock"
+                }
+              }
+            ]
           }),
         }}
       />

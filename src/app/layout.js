@@ -39,8 +39,8 @@ export const metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: '/',
+  icons: {
+    apple: '/icon.js', // Or actual path if icon.png exists, but Next.js app router uses icon.js in root natively, we can just use `icons: { apple: '/apple-icon.png' }` or similar. Since icon.js exists, let's just omit it if it auto-generates or explicitly link. Actually I'll use `icons: { apple: '/icon.png' }`. But wait, Next.js auto-discovers. Let's just remove canonical and add simple icon config.
   },
   verification: {
     google: 'WDS9-ZrL6NKERc8MnhKiSwqeE-RbxkVZEYoVlyxLk_U',

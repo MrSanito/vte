@@ -5,6 +5,12 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    category_id: category.id,
+  }));
+}
+
 // Generate MetaData for SEO
 export async function generateMetadata({ params }) {
   // Await params if necessary (Next.js 15+ compatibility)
@@ -23,6 +29,9 @@ export async function generateMetadata({ params }) {
     title: `${category.name} | Vishal Tools Enterprise`,
     description: `Explore our range of ${category.name} including ${productNames}. High-quality industrial manufacturing from Vadodara.`,
     keywords: [category.name, ...category.products.map(p => p.name), "Industrial Machinery", "Vadodara", "Manufacturing", "Vishal Tools"],
+    alternates: {
+      canonical: `/categories/${category.id}`,
+    },
     openGraph: {
       title: `${category.name} | Vishal Tools Enterprise`,
       description: category.description,
