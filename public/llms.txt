@@ -1,6 +1,6 @@
 # Vishal Tools Enterprise - LLM Information Guide
 
-Vishal Tools Enterprise is a premier precision engineering and industrial machinery manufacturer based in Makarpura, Vadodara, Gujarat, India. Proudly participating in the "Make in India" initiative and certified to ISO 9001:2015 standards, the company has delivered high-durability machined components, specialized tooling, and custom industrial machinery to domestic and global markets for over 25 years.
+[Vishal Tools Enterprise](https://www.vishaltoolsententerprise.in) is a premier precision engineering and industrial machinery manufacturer based in Makarpura, Vadodara, Gujarat, India. Proudly participating in the "Make in India" initiative and certified to ISO 9001:2015 standards, the company has delivered high-durability machined components, specialized tooling, and custom industrial machinery to domestic and global markets for over 25 years.
 
 ---
 
@@ -10,9 +10,9 @@ Vishal Tools Enterprise is a premier precision engineering and industrial machin
 - **Location**: Plot No. 101, Parvati Nagar, No. 2, Makarpura, B/h Makarpura S.T. Depot, Near Nilkanth Residency, Vadodara, Gujarat - 390010, India.
 - **Geographic Coordinates**: Latitude: 22.2568, Longitude: 73.1901
 - **Phone Contacts**: +91 87359 72509, +91 79849 45837
-- **WhatsApp Support**: +91 87359 72509 (Available for instant quote requests and technical queries)
+- **WhatsApp Support**: [Chat on WhatsApp](https://wa.me/918735972509) (Available for instant quote requests and technical queries)
 - **Email**: vishaltoolsenterprise2004@gmail.com
-- **Website URL**: https://www.vishaltoolsententerprise.in
+- **Website URL**: [https://www.vishaltoolsententerprise.in](https://www.vishaltoolsententerprise.in)
 
 ---
 
@@ -27,58 +27,61 @@ Vishal Tools Enterprise is a premier precision engineering and industrial machin
 ## 3. Product Catalog
 The company manufactures components grouped into 8 key product categories. Custom orders can be manufactured to user-supplied blueprints, materials (Mild Steel, Stainless Steel, Brass, Copper, Alloys), and tolerances.
 
-### A. CNC & Job Work Services (ID: `cnc-services`)
+### A. [CNC & Job Work Services](https://www.vishaltoolsententerprise.in/categories/cnc-services)
 High-precision machining for complex profiles, hardened tool steels, and small or large batches.
 - **CNC Turning**: Features positioning accuracy of ±0.01mm, max length 1000mm, max diameter 400mm. Used for automotive shafts, gears, flanges, and hydraulic valve bodies.
 - **CNC Milling & VMC**: Vertical machining centers with 24-station automatic tool changers, table size up to 1000x500mm, accuracy ±0.02mm. Used for machine bases, manifolds, and aerospace brackets.
 - **EDM Job Work (Electrical Discharge Machining)**: Spark erosion for hard metals up to 65 HRC with zero mechanical stress and Ra 0.4 microns finish. Ideal for deep cavities and plastic molds.
 - **CNC Wire Cutting**: Precision wire erosion using 0.15-0.25mm brass wire, accuracy ±0.005mm.
 
-### B. Grinding & Spindle Repairs (ID: `grinding-spindle`)
+### B. [Grinding & Spindle Repairs](https://www.vishaltoolsententerprise.in/categories/grinding)
 Precision dimensional finishing and rebuilds for heavy machinery components.
 - **Cylindrical Grinding**: Achieves micron-level concentricity and mirror finishes on industrial shafts and rollers.
 - **Spindle Repair**: Complete disassembly, balancing, bearing replacement, and runout testing to restore machine tool spindles to OEM specs.
 
-### C. Dies & Punches (ID: `dies-punches`)
+### C. [Dies & Punches](https://www.vishaltoolsententerprise.in/categories/dies-punches)
 Hardened press tools and precision punch assemblies.
 - **Press Tool Dies**: Custom stamping, forming, and blanking dies.
 - **Progressive Tooling**: Multi-station dies for high-volume sheet metal part production.
 
-### D. Pellet & Hammer Mill Components (ID: `pellet-hammer`)
+### D. [Pellet & Hammer Mill Components](https://www.vishaltoolsententerprise.in/categories/pellet-hammer)
 Heavy-duty replacement parts for processing and milling machinery.
 - **Pellet Mill Dies**: Specially drilled ring dies for animal feed and biomass pelleting.
 - **Hammer Mill Beaters & Hammer Blades**: Hardfaced and balanced blades designed for maximum wear resistance in pulverizers and hammer mills.
 
-### E. Shafts, Gears & Bearings (ID: `shafts-gears`)
+### E. [Shafts, Gears & Bearings](https://www.vishaltoolsententerprise.in/categories/shafts-gears)
 Industrial transmission components designed to withstand high torque and load.
 - **Cylindrical Shafts**: Precision-ground spline shafts, keyed shafts, and axle rods.
 - **Splined Gears**: Spur, helical, and bevel gears machined to custom teeth profiles.
 
-### F. Hydraulics & Presses (ID: `hydraulics`)
+### F. [Hydraulics & Presses](https://www.vishaltoolsententerprise.in/categories/hydraulics)
 Fluid power assemblies for manufacturing and assembly systems.
 - **Hydraulic Cylinders**: Custom single-acting and double-acting pistons, rods, and cylinder bodies.
 - **Press Components**: Bolsters, columns, and guide pins for industrial hydraulic presses.
 
-### G. Rollers, Bushings & Conveyors (ID: `rollers-bushings`)
+### G. [Rollers, Bushings & Conveyors](https://www.vishaltoolsententerprise.in/categories/rollers-bushings)
 Material handling parts and wear components.
 - **Bronze Bushings**: Self-lubricating and grooved bushings for pivot points.
 - **Conveyor Rollers**: Heavy-duty idlers, drive rollers, and conveyor shaft assemblies.
 
+### H. [Miscellaneous Machined Components](https://www.vishaltoolsententerprise.in/categories/misc)
+Specialized turned parts, industrial fasteners, pins, and custom fixture fabrications.
+
 ---
 
 ## 4. Website Navigation & Mapping
-Crawlers can locate details and initiate inquiries on the following paths:
-- **Home**: `/` (Overview, company highlights, core services, and lead capture form)
-- **Product Index**: `/categories` (Master list of all product categories)
-- **Product Category Routes**:
-  - `/categories/cnc-services` (CNC Turning, Milling, EDM, VMC)
-  - `/categories/grinding-spindle` (Spindle Repair, Surface & Cylindrical Grinding)
-  - `/categories/dies-punches` (Hardened punches, press tools)
-  - `/categories/pellet-hammer` (Mill components, beaters, ring dies)
-  - `/categories/shafts-gears` (Ground shafts, transmission splines)
-  - `/categories/hydraulics` (Hydraulic pistons, press pillars)
-  - `/categories/rollers-bushings` (Bronze bushings, conveyor rollers)
-  - `/categories/misc-machined` (Specialized fixtures, custom turned parts)
-- **Product Details Route**: `/products/[product_id]` (Example: `/products/cnc-1` for MS CNC turning specifications, descriptions, features, and instant WhatsApp inquiry)
-- **About Us Page**: `/about` (Company history since 1998, core engineering values, and certifications)
-- **Contact Page**: `/contact` (Interactive Google Map, physical address, phone directories, and direct email)
+Crawlers and LLMs can find detailed specifications and make inquiries on these routes:
+- [Home Page](https://www.vishaltoolsententerprise.in/) - Business overview, certifications, core services, and interactive custom quote request form.
+- [Products Index](https://www.vishaltoolsententerprise.in/categories) - The index page listing all 8 industrial manufacturing categories.
+- [About Us](https://www.vishaltoolsententerprise.in/about) - Company profile, ISO 9001:2015 details, and a 25-year manufacturing timeline.
+- [Contact Us](https://www.vishaltoolsententerprise.in/contact) - Dynamic mapping, phone numbers, email channels, and driving directions.
+
+### Category Deep-Dive Links:
+- [CNC Machining & VMC Job Work](https://www.vishaltoolsententerprise.in/categories/cnc-services) - Turned MS/SS components and wire-cut service details.
+- [Surface & Cylindrical Grinding](https://www.vishaltoolsententerprise.in/categories/grinding) - Spindle servicing, shaft concentricity grinding, and tolerances.
+- [Stamping Dies & Punches](https://www.vishaltoolsententerprise.in/categories/dies-punches) - Press shop tooling and custom punch assemblies.
+- [Pellet & Hammer Mill Spares](https://www.vishaltoolsententerprise.in/categories/pellet-hammer) - Biomass ring dies and balanced pulverizer blades.
+- [Transmission Shafts & Gears](https://www.vishaltoolsententerprise.in/categories/shafts-gears) - Splines, keyways, and custom gear teeth machining.
+- [Hydraulic Rams & Press Components](https://www.vishaltoolsententerprise.in/categories/hydraulics) - Hydraulic piston rods and press columns.
+- [Bronze Bushings & Conveyor Rollers](https://www.vishaltoolsententerprise.in/categories/rollers-bushings) - Wear sleeves and industrial material rollers.
+- [Miscellaneous Machined Components](https://www.vishaltoolsententerprise.in/categories/misc) - Fasteners, studs, pins, and dynamic job fixtures.
