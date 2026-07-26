@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Mail } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+// Framer Motion removed for performance and layout stability
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,74 +79,68 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
+
+      {/* Mobile Drawer (Backdrop + Sidebar) */}
+      {/* Backdrop */}
+      <div
+        className={`fixed inset-0 bg-black/80 z-[9998] transition-opacity duration-300 ${
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsOpen(false)}
+      />
+
+      {/* Sidebar */}
+      <div
+        className={`fixed top-0 left-0 w-[280px] h-full z-[9999] flex flex-col p-6 shadow-[10px_0_50px_rgba(0,0,0,0.6)] border-r border-white/10 transition-transform duration-300 ease-out transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+        style={{ backgroundColor: "#020617" }}
+      >
+        <div className="flex justify-between items-center mb-10 pb-4 border-b border-white/10">
+          <span className="text-xl font-bold text-white uppercase tracking-widest">
+            Menu
+          </span>
+          <button
+            onClick={() => setIsOpen(false)}
+            className="p-2 rounded-xl bg-white/5 text-white hover:bg-white/10 active:scale-95 transition-all"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </button>
+        </div>
+
+        <div className="flex flex-col gap-3">
+          {[
+            { name: "Home", href: "/" },
+            { name: "Products", href: "/categories" },
+            { name: "Services", href: "/#Services_Section" },
+            { name: "About", href: "/about" },
+            { name: "Contact", href: "/contact" },
+          ].map((item, idx) => (
+            <Link
+              key={idx}
+              href={item.href}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black/80 z-[9998]"
-            />
-
-            {/* Sidebar */}
-            <motion.div
-              initial={{ x: "-100%", opacity: 1 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: "-100%", opacity: 1 }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 left-0 w-[280px] h-full z-[9999] flex flex-col p-6 shadow-[10px_0_50px_rgba(0,0,0,0.6)] border-r border-white/10"
-              style={{ backgroundColor: "#020617" }}
+              className="flex items-center justify-between p-4 rounded-xl hover:bg-white/10 group transition-all"
             >
-              <div className="flex justify-between items-center mb-10 pb-4 border-b border-white/10">
-                <span className="text-xl font-bold text-white uppercase tracking-widest">
-                  Menu
-                </span>
-                <button
-                  onClick={() => setIsOpen(false)}
-                  className="p-2 rounded-xl bg-white/5 text-white hover:bg-white/10 active:scale-95 transition-all"
-                >
-                  <X className="h-6 w-6" />
-                </button>
-              </div>
+              <span className="text-lg font-medium text-orange-50 group-hover:text-white">
+                {item.name}
+              </span>
+              <span className="text-orange-400 group-hover:translate-x-1 transition-all opacity-0 group-hover:opacity-100">
+                →
+              </span>
+            </Link>
+          ))}
+        </div>
 
-              <div className="flex flex-col gap-3">
-                {[
-                  { name: "Home", href: "/" },
-                  { name: "Products", href: "/categories" },
-                  { name: "Services", href: "/#Services_Section" },
-                  { name: "About", href: "/about" },
-                  { name: "Contact", href: "/contact" },
-                ].map((item, idx) => (
-                  <Link
-                    key={idx}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="flex items-center justify-between p-4 rounded-xl hover:bg-white/10 group transition-all"
-                  >
-                    <span className="text-lg font-medium text-orange-50 group-hover:text-white">
-                      {item.name}
-                    </span>
-                    <span className="text-orange-400 group-hover:translate-x-1 transition-all opacity-0 group-hover:opacity-100">
-                      →
-                    </span>
-                  </Link>
-                ))}
-              </div>
-
-              <div className="mt-auto pb-8">
-                <Link href="/contact" onClick={() => setIsOpen(false)}>
-                  <button className="w-full rounded-xl py-4 text-lg bg-gradient-to-r from-orange-600 to-red-600 text-white font-black shadow-[0_10px_30px_rgba(234,88,12,0.3)] hover:from-orange-500 hover:to-red-500 active:scale-[0.98] transition-all uppercase tracking-tight">
-                    Get Free Quote
-                  </button>
-                </Link>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+        <div className="mt-auto pb-8">
+          <Link href="/contact" onClick={() => setIsOpen(false)}>
+            <button className="w-full rounded-xl py-4 text-lg bg-gradient-to-r from-orange-600 to-red-600 text-white font-black shadow-[0_10px_30px_rgba(234,88,12,0.3)] hover:from-orange-500 hover:to-red-500 active:scale-[0.98] transition-all uppercase tracking-tight min-h-[48px]">
+              Get Free Quote
+            </button>
+          </Link>
+        </div>
+      </div>
     </>
   );
 }

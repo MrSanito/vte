@@ -269,9 +269,9 @@ export default function Home() {
               />
             </div>
             {/* Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-orange-600 text-white p-8 rounded-3xl shadow-2xl font-bold tracking-tight">
-              <div className="text-sm opacity-80 mb-1 uppercase tracking-widest">Certified Tooling</div>
-              <div className="text-2xl">ISO 9001:2015</div>
+            <div className="absolute -bottom-6 -left-6 bg-orange-700 text-white p-8 rounded-3xl shadow-2xl font-bold tracking-tight">
+              <div className="text-xs font-extrabold mb-1.5 uppercase tracking-widest text-orange-100">Certified Tooling</div>
+              <div className="text-2xl font-black">ISO 9001:2015</div>
             </div>
           </div>
         </div>
