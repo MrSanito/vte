@@ -10,13 +10,13 @@ import Analytics from "src/components/Analytics";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: 'swap',
+  display: 'optional',
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  display: 'swap',
+  display: 'optional',
 });
    
 export const metadata = {
