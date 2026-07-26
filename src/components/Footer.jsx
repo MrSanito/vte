@@ -152,8 +152,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="flex flex-col md:flex-row justify-between items-center pt-6 text-sm text-gray-400">
         <p>
-          © {new Date().getFullYear()} Vishal Tools Enterprise. All rights
-          reserved.
+          © 2026 Vishal Tools Enterprise. All rights reserved.
         </p>
         <div className="flex gap-6 mt-4 md:mt-0">
           <Link href="/about">Privacy Policy</Link>
