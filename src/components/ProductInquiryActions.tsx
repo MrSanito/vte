@@ -24,7 +24,7 @@ export default function ProductInquiryActions({ product }) {
           <span className="text-5xl font-extrabold text-gray-900 dark:text-white">
             {product.price !== "₹---" ? product.price : "Contact for Pricing"}
           </span>
-          <p className="text-xs text-orange-600 mt-2 font-medium italic">* Production cost depends on custom size and material specifications</p>
+          <p className="text-xs text-orange-700 mt-2 font-medium italic">* Production cost depends on custom size and material specifications</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 flex-1 sm:flex-none">
           <button 

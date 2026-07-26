@@ -35,11 +35,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto py-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
+          <div className="animate-fade-in-up">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.1] tracking-tighter mb-8">
               Precision Engineering <br className="hidden md:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600 drop-shadow-sm">
@@ -55,7 +51,7 @@ export default function Home() {
             <div className="mt-12 flex flex-col sm:flex-row justify-center gap-6">
               <Link
                 href="/categories"
-                className="group relative inline-flex items-center justify-center rounded-full bg-orange-600 px-10 py-5 text-lg font-bold text-white shadow-[0_0_20px_rgba(234,88,12,0.3)] hover:bg-orange-700 hover:-translate-y-1 transition-all overflow-hidden"
+                className="group relative inline-flex items-center justify-center rounded-full bg-orange-700 px-10 py-5 text-lg font-bold text-white shadow-[0_0_20px_rgba(234,88,12,0.3)] hover:bg-orange-800 hover:-translate-y-1 transition-all overflow-hidden"
               >
                 <span className="relative z-10">Explore Products</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -67,7 +63,7 @@ export default function Home() {
                 Contact Us
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
         
         {/* Abstract shapes */}

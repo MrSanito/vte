@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "src/components/Footer";
 import { ThemeProvider } from "../context/ThemeContext";
 import WhatsAppButton from "../components/WhatsAppButton";
-import Script from "next/script";
+import Analytics from "src/components/Analytics";
 
 
 const geistSans = Geist({
@@ -112,90 +112,58 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
           <WhatsAppButton />
+          <Analytics />
         </ThemeProvider>
 
-        {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-NJX8FRDX');
-          `}
-        </Script>
-
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-JP5XLCYZN7"
-          strategy="lazyOnload"
+        <script
+          id="json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Vishal Tools Enterprise",
+                "image": "https://www.vishaltoolsententerprise.in/Hero.jpg",
+                "telephone": "+918735972509",
+                "email": "vishaltoolsenterprise2004@gmail.com",
+                "url": "https://www.vishaltoolsententerprise.in",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Plot No. 101, Parvati Nagar, No. 2, Makarpura, B/h Makarpura S. T. Depot, Near Nilkanth Residency",
+                  "addressLocality": "Vadodara",
+                  "addressRegion": "Gujarat",
+                  "postalCode": "390010",
+                  "addressCountry": "IN"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 22.2568,
+                  "longitude": 73.1901
+                },
+                "openingHoursSpecification": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "19:00"
+                },
+                "sameAs": [
+                  "https://www.facebook.com/",
+                  "https://twitter.com/",
+                  "https://www.linkedin.com/",
+                  "https://www.youtube.com/"
+                ]
+              }
+            `
+          }}
         />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-JP5XLCYZN7');
-          `}
-        </Script>
-
-        <Script id="json-ld" type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "Vishal Tools Enterprise",
-              "image": "https://www.vishaltoolsententerprise.in/Hero.jpg",
-              "telephone": "+918735972509",
-              "email": "vishaltoolsenterprise2004@gmail.com",
-              "url": "https://www.vishaltoolsententerprise.in",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Plot No. 101, Parvati Nagar, No. 2, Makarpura, B/h Makarpura S. T. Depot, Near Nilkanth Residency",
-                "addressLocality": "Vadodara",
-                "addressRegion": "Gujarat",
-                "postalCode": "390010",
-                "addressCountry": "IN"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 22.2568,
-                "longitude": 73.1901
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday"
-                ],
-                "opens": "09:00",
-                "closes": "19:00"
-              },
-              "sameAs": [
-                "https://www.facebook.com/",
-                "https://twitter.com/",
-                "https://www.linkedin.com/",
-                "https://www.youtube.com/"
-              ]
-            }
-          `}
-        </Script>
-
-        {/* Microsoft Clarity */}
-        <Script id="microsoft-clarity" strategy="lazyOnload">
-          {`
-            (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "vbqdl2iofj");
-          `}
-        </Script>
       </body>
     </html>
   );

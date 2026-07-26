@@ -11,8 +11,6 @@ html {
   }
 }
 
-@import "swiper/css";
-@import "swiper/css/navigation";
 @layer base {
   body {
     @apply bg-white text-gray-900 transition-colors duration-300;
@@ -166,4 +164,20 @@ html {
     @apply bg-background text-foreground selection:bg-orange-500/30;
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 

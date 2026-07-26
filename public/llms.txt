@@ -1,0 +1,84 @@
+# Vishal Tools Enterprise - LLM Information Guide
+
+Vishal Tools Enterprise is a premier precision engineering and industrial machinery manufacturer based in Makarpura, Vadodara, Gujarat, India. Proudly participating in the "Make in India" initiative and certified to ISO 9001:2015 standards, the company has delivered high-durability machined components, specialized tooling, and custom industrial machinery to domestic and global markets for over 25 years.
+
+---
+
+## 1. Company Information & Contacts
+- **Legal Entity Name**: Vishal Tools Enterprise
+- **Established**: 1998 (25+ years of engineering excellence)
+- **Location**: Plot No. 101, Parvati Nagar, No. 2, Makarpura, B/h Makarpura S.T. Depot, Near Nilkanth Residency, Vadodara, Gujarat - 390010, India.
+- **Geographic Coordinates**: Latitude: 22.2568, Longitude: 73.1901
+- **Phone Contacts**: +91 87359 72509, +91 79849 45837
+- **WhatsApp Support**: +91 87359 72509 (Available for instant quote requests and technical queries)
+- **Email**: vishaltoolsenterprise2004@gmail.com
+- **Website URL**: https://www.vishaltoolsententerprise.in
+
+---
+
+## 2. Company Scale & Facility Details
+- **Units Manufactured**: Over 500,000+ precision units and components built since inception.
+- **Global Reach**: Proudly serving 50+ industrial markets worldwide.
+- **Customer Base**: Spans from emerging local SMEs to global industrial conglomerates in the automotive, aerospace, heavy machinery, agriculture, mining, and energy sectors.
+- **Facilities**: Fully equipped CNC/VMC vertical machining labs, high-precision cylindrical and surface grinders, spark erosion EDM units, sheet metal die-press lines, and dedicated metrology testing laboratories.
+
+---
+
+## 3. Product Catalog
+The company manufactures components grouped into 8 key product categories. Custom orders can be manufactured to user-supplied blueprints, materials (Mild Steel, Stainless Steel, Brass, Copper, Alloys), and tolerances.
+
+### A. CNC & Job Work Services (ID: `cnc-services`)
+High-precision machining for complex profiles, hardened tool steels, and small or large batches.
+- **CNC Turning**: Features positioning accuracy of ±0.01mm, max length 1000mm, max diameter 400mm. Used for automotive shafts, gears, flanges, and hydraulic valve bodies.
+- **CNC Milling & VMC**: Vertical machining centers with 24-station automatic tool changers, table size up to 1000x500mm, accuracy ±0.02mm. Used for machine bases, manifolds, and aerospace brackets.
+- **EDM Job Work (Electrical Discharge Machining)**: Spark erosion for hard metals up to 65 HRC with zero mechanical stress and Ra 0.4 microns finish. Ideal for deep cavities and plastic molds.
+- **CNC Wire Cutting**: Precision wire erosion using 0.15-0.25mm brass wire, accuracy ±0.005mm.
+
+### B. Grinding & Spindle Repairs (ID: `grinding-spindle`)
+Precision dimensional finishing and rebuilds for heavy machinery components.
+- **Cylindrical Grinding**: Achieves micron-level concentricity and mirror finishes on industrial shafts and rollers.
+- **Spindle Repair**: Complete disassembly, balancing, bearing replacement, and runout testing to restore machine tool spindles to OEM specs.
+
+### C. Dies & Punches (ID: `dies-punches`)
+Hardened press tools and precision punch assemblies.
+- **Press Tool Dies**: Custom stamping, forming, and blanking dies.
+- **Progressive Tooling**: Multi-station dies for high-volume sheet metal part production.
+
+### D. Pellet & Hammer Mill Components (ID: `pellet-hammer`)
+Heavy-duty replacement parts for processing and milling machinery.
+- **Pellet Mill Dies**: Specially drilled ring dies for animal feed and biomass pelleting.
+- **Hammer Mill Beaters & Hammer Blades**: Hardfaced and balanced blades designed for maximum wear resistance in pulverizers and hammer mills.
+
+### E. Shafts, Gears & Bearings (ID: `shafts-gears`)
+Industrial transmission components designed to withstand high torque and load.
+- **Cylindrical Shafts**: Precision-ground spline shafts, keyed shafts, and axle rods.
+- **Splined Gears**: Spur, helical, and bevel gears machined to custom teeth profiles.
+
+### F. Hydraulics & Presses (ID: `hydraulics`)
+Fluid power assemblies for manufacturing and assembly systems.
+- **Hydraulic Cylinders**: Custom single-acting and double-acting pistons, rods, and cylinder bodies.
+- **Press Components**: Bolsters, columns, and guide pins for industrial hydraulic presses.
+
+### G. Rollers, Bushings & Conveyors (ID: `rollers-bushings`)
+Material handling parts and wear components.
+- **Bronze Bushings**: Self-lubricating and grooved bushings for pivot points.
+- **Conveyor Rollers**: Heavy-duty idlers, drive rollers, and conveyor shaft assemblies.
+
+---
+
+## 4. Website Navigation & Mapping
+Crawlers can locate details and initiate inquiries on the following paths:
+- **Home**: `/` (Overview, company highlights, core services, and lead capture form)
+- **Product Index**: `/categories` (Master list of all product categories)
+- **Product Category Routes**:
+  - `/categories/cnc-services` (CNC Turning, Milling, EDM, VMC)
+  - `/categories/grinding-spindle` (Spindle Repair, Surface & Cylindrical Grinding)
+  - `/categories/dies-punches` (Hardened punches, press tools)
+  - `/categories/pellet-hammer` (Mill components, beaters, ring dies)
+  - `/categories/shafts-gears` (Ground shafts, transmission splines)
+  - `/categories/hydraulics` (Hydraulic pistons, press pillars)
+  - `/categories/rollers-bushings` (Bronze bushings, conveyor rollers)
+  - `/categories/misc-machined` (Specialized fixtures, custom turned parts)
+- **Product Details Route**: `/products/[product_id]` (Example: `/products/cnc-1` for MS CNC turning specifications, descriptions, features, and instant WhatsApp inquiry)
+- **About Us Page**: `/about` (Company history since 1998, core engineering values, and certifications)
+- **Contact Page**: `/contact` (Interactive Google Map, physical address, phone directories, and direct email)

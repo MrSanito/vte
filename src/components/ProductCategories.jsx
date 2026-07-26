@@ -30,13 +30,13 @@ const ProductCategories = () => {
         ))}
       </div>
 
-      <div className="py-18">
-        <button className="bg-orange-600 hover:bg-orange-700 text-white font-medium py-3 px-5 rounded-md">
-        <Link href="/categories">
-        
+      <div className="py-18 flex justify-center">
+        <Link
+          href="/categories"
+          className="inline-flex items-center justify-center bg-orange-700 hover:bg-orange-800 text-white font-medium py-3.5 px-6 rounded-md min-h-[48px] transition-colors"
+        >
           View All Products
         </Link>
-        </button>
       </div>
     </div>
   );
@@ -74,11 +74,11 @@ const Card = ({ name, desc, image, count, id }) => {
           </p>
           
           <div className="flex items-center justify-between mt-auto">
-             <span className="text-xs font-semibold uppercase tracking-wider text-gray-400 group-hover:text-orange-500 transition-colors">
+             <span className="text-xs font-semibold uppercase tracking-wider text-gray-600 dark:text-gray-400 group-hover:text-orange-700 dark:group-hover:text-orange-400 transition-colors">
                 View Collection
              </span>
-             <div className="w-8 h-8 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center group-hover:bg-orange-600 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-orange-600 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <div className="w-8 h-8 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center group-hover:bg-orange-700 transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-orange-700 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
              </div>

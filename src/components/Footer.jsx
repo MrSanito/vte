@@ -33,24 +33,28 @@ const Footer = () => {
             <a
               href="#"
               className="bg-gray-800 hover:bg-blue-700 p-2 rounded-full"
+              aria-label="Facebook"
             >
               <FaFacebookF size={16} />
             </a>
             <a
               href="#"
               className="bg-gray-800 hover:bg-blue-400 p-2 rounded-full"
+              aria-label="Twitter"
             >
               <FaTwitter size={16} />
             </a>
             <a
               href="#"
               className="bg-gray-800 hover:bg-blue-600 p-2 rounded-full"
+              aria-label="LinkedIn"
             >
               <FaLinkedinIn size={16} />
             </a>
             <a
               href="#"
               className="bg-gray-800 hover:bg-red-500 p-2 rounded-full"
+              aria-label="YouTube"
             >
               <FaYoutube size={16} />
             </a>
@@ -128,17 +132,17 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Connect</h3>
           <ul className="space-y-4 text-sm">
             <li className="flex flex-col gap-1">
-              <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">Call Us</span>
+              <span className="text-xs uppercase tracking-widest text-gray-400 font-medium">Call Us</span>
               <a href="tel:+918735972509" className="text-white text-lg font-medium hover:text-orange-500 transition-colors tracking-wide">+91 87359 72509</a>
             </li>
             <li className="flex flex-col gap-1">
-              <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">WhatsApp</span>
+              <span className="text-xs uppercase tracking-widest text-gray-400 font-medium">WhatsApp</span>
               <a href="https://wa.me/918735972509" target="_blank" rel="noopener noreferrer" className="text-green-500 text-lg font-medium hover:text-green-400 transition-colors flex items-center gap-2">
                 Chat on WhatsApp &rarr;
               </a>
             </li>
             <li className="flex flex-col gap-1">
-              <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">Location</span>
+              <span className="text-xs uppercase tracking-widest text-gray-400 font-medium">Location</span>
               <span className="text-gray-400 leading-relaxed">Makarpura, Vadodara, Gujarat - 390010</span>
             </li>
           </ul>

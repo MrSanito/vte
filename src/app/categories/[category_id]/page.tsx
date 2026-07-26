@@ -60,7 +60,7 @@ export default async function CategoryDetailPage({ params }) {
         <p className="text-gray-500 dark:text-gray-400 mb-8">We couldn't find the category you're looking for.</p>
         <Link 
           href="/categories"
-          className="bg-orange-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-700 transition"
+          className="bg-orange-700 text-white px-6 py-3.5 rounded-lg font-medium hover:bg-orange-800 transition min-h-[48px] inline-flex items-center"
         >
           Back to Categories
         </Link>
