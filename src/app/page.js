@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
+// Framer Motion removed for performance and layout stability
 
 const LeadForm = dynamic(() => import("src/components/LeadForm"), {
   ssr: false,
@@ -27,6 +27,8 @@ export default function Home() {
             alt="Factory Background" 
             fill
             priority
+            quality={70}
+            sizes="100vw"
             className="object-cover filter brightness-[0.3]"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-950/20 via-transparent to-gray-950"></div>
@@ -88,10 +90,7 @@ export default function Home() {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Card 1 */}
-            <motion.div
-              whileHover={{ y: -10 }}
-              transition={{ duration: 0.3 }}
-            >
+            <div className="transition-transform duration-300 hover:-translate-y-2.5">
               <Link href="/categories/cnc-services" className="group glass-card rounded-3xl p-10 shadow-xl hover:shadow-orange-500/10 transition-all border border-gray-200/50 dark:border-white/5 block h-full">
                 <div className="w-20 h-20 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-8 group-hover:bg-orange-500 group-hover:glow-orange transition-all duration-500">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-orange-600 group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,13 +116,10 @@ export default function Home() {
                   </li>
                 </ul>
               </Link>
-            </motion.div>
+            </div>
 
             {/* Card 2 */}
-            <motion.div
-              whileHover={{ y: -10 }}
-              transition={{ duration: 0.3 }}
-            >
+            <div className="transition-transform duration-300 hover:-translate-y-2.5">
               <Link href="/categories/shafts-gears" className="group glass-card rounded-3xl p-10 shadow-xl hover:shadow-blue-500/10 transition-all border border-gray-200/50 dark:border-white/5 block h-full">
                 <div className="w-20 h-20 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-8 group-hover:bg-blue-600 transition-all duration-500">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -150,13 +146,10 @@ export default function Home() {
                   </li>
                 </ul>
               </Link>
-            </motion.div>
+            </div>
 
             {/* Card 3 */}
-            <motion.div
-              whileHover={{ y: -10 }}
-              transition={{ duration: 0.3 }}
-            >
+            <div className="transition-transform duration-300 hover:-translate-y-2.5">
               <Link href="/contact" className="group glass-card rounded-3xl p-10 shadow-xl hover:shadow-green-500/10 transition-all border border-gray-200/50 dark:border-white/5 block h-full">
                 <div className="w-20 h-20 rounded-2xl bg-green-500/10 flex items-center justify-center mb-8 group-hover:bg-green-600 transition-all duration-500">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-green-600 group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -182,7 +175,7 @@ export default function Home() {
                   </li>
                 </ul>
               </Link>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -193,12 +186,7 @@ export default function Home() {
         <div className="absolute inset-0 grid-pattern opacity-5"></div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+            <div>
               <span className="inline-block text-orange-500 font-bold uppercase tracking-[0.2em] text-sm mb-6">
                   Custom Engineering
               </span>
@@ -217,7 +205,7 @@ export default function Home() {
                   Request Custom Quote 
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
               </button>
-            </motion.div>
+            </div>
             
             {/* Full screen dialog */}
             <LeadForm open={open} onOpenChange={setOpen} />
@@ -230,12 +218,7 @@ export default function Home() {
         
         <div className="grid lg:grid-cols-2 gap-20 items-center max-w-7xl mx-auto">
           {/* Left Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 tracking-tight">
               25 Years of Engineering Excellence
             </h2>
@@ -270,35 +253,27 @@ export default function Home() {
               <span className="relative z-10 transition-colors group-hover:text-orange-500">Read Our Story</span>
               <div className="absolute inset-0 bg-white/10 dark:bg-gray-100 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </button>
-          </motion.div>
+          </div>
 
           {/* Right Image */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative"
-          >
+          <div className="relative">
             <div className="aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white dark:border-gray-900 group">
               <Image
                 src="/Hero.jpg" 
                 alt="Vishal Tools Enterprise"
                 width={800}
                 height={600}
+                quality={70}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
               />
             </div>
             {/* Badge */}
-            <motion.div 
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 -left-6 bg-orange-600 text-white p-8 rounded-3xl shadow-2xl font-bold tracking-tight"
-            >
+            <div className="absolute -bottom-6 -left-6 bg-orange-600 text-white p-8 rounded-3xl shadow-2xl font-bold tracking-tight">
               <div className="text-sm opacity-80 mb-1 uppercase tracking-widest">Certified Tooling</div>
               <div className="text-2xl">ISO 9001:2015</div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </section>
     </>

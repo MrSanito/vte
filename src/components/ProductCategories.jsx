@@ -54,7 +54,8 @@ const Card = ({ name, desc, image, count, id }) => {
               src={image} 
               alt={name}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              quality={70}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 260px"
               className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
             
