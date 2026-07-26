@@ -13,7 +13,7 @@ const ProductCategories = () => {
           Explore our comprehensive range of industrial equipment and machinery
         </p>
       </div>
-      <div className="flex flex-wrap justify-center gap-2 px-4 min-w-screen items-center">
+      <div className="flex flex-wrap justify-center gap-2 px-4 w-full items-center">
         {categories.map((cat, index) => (
           <div
             key={cat.id}

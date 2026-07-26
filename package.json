@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "browserslist": [
-    "Chrome >= 93",
-    "Safari >= 15.4",
-    "Firefox >= 90",
-    "Edge >= 93"
+    "defaults and supports es6-module",
+    "not dead"
   ],
   "scripts": {
     "dev": "next dev",

@@ -4,12 +4,7 @@ import ProductCategories from "src/components/ProductCategories";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import dynamic from "next/dynamic";
-// Framer Motion removed for performance and layout stability
-
-const LeadForm = dynamic(() => import("src/components/LeadForm"), {
-  ssr: false,
-});
+import LeadForm from "src/components/LeadForm";
 
 export default function Home() {
     const [open, setOpen] = useState(false);
@@ -18,7 +13,7 @@ export default function Home() {
     <>
       <section
         id="HeroSection"
-        className="relative min-h-[100dvh] flex items-center justify-center px-4 sm:px-6 lg:px-8 text-center overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 text-center overflow-hidden"
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
@@ -27,7 +22,7 @@ export default function Home() {
             alt="Factory Background" 
             fill
             priority
-            quality={70}
+            quality={50}
             sizes="100vw"
             className="object-cover filter brightness-[0.3]"
           />
