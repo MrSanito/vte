@@ -95,8 +95,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`light ${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://c.clarity.ms" />
       </head>
       <body
         className="antialiased overflow-x-hidden"
